@@ -60,9 +60,9 @@
 					<span class="font-bold text-amber-400 text-sm">Central do Sertanejo</span>
 				</div>
 
-				<button
-					class="bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm px-4 py-2 rounded-full shadow-lg shadow-green-500/20">Garantir
-					acesso</button>
+				<a href="#oferta-premium"
+					class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm px-4 py-2 rounded-full shadow-lg shadow-green-500/20">Garantir
+					acesso</a>
 
 			</div>
 		</header>
@@ -94,8 +94,8 @@
 				</div>
 
 				<h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight"><span
-						class="text-amber-400">+3.000 MÚSICAS</span><br /><span
-						class="text-white">SERTANEJAS</span><br /><span class="text-orange-400 text-3xl md:text-5xl">pro
+						class="text-amber-400">+3.000 CLÁSSICOS</span><br /><span class="text-white">DO
+						MODÃO</span><br /><span class="text-orange-400 text-3xl md:text-5xl">pro
 						seu CARRO e PENDRIVE</span></h1>
 				<p class="text-xl md:text-2xl text-gray-300 mb-6 max-w-2xl mx-auto">Modão, universitário, sofrência e
 					hits atuais. <span class="text-amber-400 font-bold">Tudo pronto pra você baixar</span> e levar pra
@@ -120,9 +120,9 @@
 						</svg> Sem mensalidade</span>
 				</div>
 
-				<button
-					class="bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl shadow-amber-500/30 transition-all duration-300 ">VER
-					UMA PRÉVIA</button>
+				<a href="#amostras-section"
+					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl shadow-amber-500/30 transition-all duration-300 ">VER
+					UMA PRÉVIA</a>
 				<p class="text-gray-400 text-sm mt-4 flex items-center justify-center gap-2"><span
 						class="animate-bounce">↓</span> Escolha a opção ideal pra você logo abaixo</p>
 
@@ -664,9 +664,9 @@
 				<div class="text-center">
 					<p class="text-gray-300 text-base md:text-lg mb-5">Curtiu a prévia? Escolha seu acesso logo abaixo.
 					</p>
-					<button
-						class="bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-lg md:text-xl px-10 py-4 rounded-full shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-transform">VER
-						OPÇÕES DE ACESSO</button>
+					<a href="#oferta-premium"
+						class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-lg md:text-xl px-10 py-4 rounded-full shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-transform">VER
+						OPÇÕES DE ACESSO</a>
 
 				</div>
 
@@ -819,9 +819,10 @@
 
 				<p class="text-center text-gray-500 text-sm mt-8">+ de 1.981 pessoas já garantiram o acesso</p>
 
-				<div class="text-center mt-8"><button
-						class="bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-lg px-8 py-4 rounded-full shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-transform">ESCOLHER
-						MINHA OPÇÃO</button>
+				<div class="text-center mt-8">
+					<a href="#oferta-premium"
+						class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-lg px-8 py-4 rounded-full shadow-xl shadow-amber-500/25 hover:scale-105 active:scale-95 transition-transform">ESCOLHER
+						MINHA OPÇÃO</a>
 
 				</div>
 
@@ -878,7 +879,7 @@
 									class="lucide lucide-check w-4 h-4 text-green-400 flex-shrink-0" aria-hidden="true">
 									<path d="M20 6 9 17l-5-5"></path>
 								</svg>
-								<span>+3.000 músicas sertanejas</span>
+								<span>+3.000 clássicos do modão raiz</span>
 							</li>
 							<li class="flex items-center gap-3 text-gray-300 text-[15px] leading-relaxed"><svg
 									xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1009,7 +1010,7 @@
 									class="lucide lucide-check w-4 h-4 text-green-400 flex-shrink-0" aria-hidden="true">
 									<path d="M20 6 9 17l-5-5"></path>
 								</svg>
-								<span>+3.000 músicas sertanejas</span>
+								<span>+3.000 clássicos do modão raiz</span>
 							</li>
 							<li class="flex items-center gap-3 text-white text-[15px] leading-relaxed"><svg
 									xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1454,6 +1455,9 @@
 					}
 				});
 			});
+
+			// Smooth Scrolling Logic
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const targetId = this.getAttribute('href'); if (targetId === '#') return; const targetElement = document.querySelector(targetId); if (targetElement) { const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: targetPosition - 50, behavior: 'smooth' }); } }); });
 		});
 	</script>
 </body>
