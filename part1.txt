@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charSet="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/e35d6693-a844-40c4-9076-5f086ea9344f/E-por-voce-que-canto-The-Sound-of-Silence-Leandro-Leonardo-LETRAS_MUS-1-1769026890546.BR" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/e35d6693-a844-40c4-9076-5f086ea9344f/Vida-Vazia-Bruno-Marrone-Cifra-Club-1769029111097.jpeg?width=8000&amp;height=8000&amp;resize=contain" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/e35d6693-a844-40c4-9076-5f086ea9344f/download-55-1769029634778.jpeg?width=8000&amp;height=8000&amp;resize=contain" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/download-56-1769030385832.jpeg?width=8000&amp;height=8000&amp;resize=contain" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/Marilia-Mendonca_Todos-os-Cantos_Bem-pior-que-eu_Todo-mundo-vai-sofrer_Rainha-da-Sofrencia-1-1769031316728.jpeg?width=8000&amp;height=8000&amp;resize=contain" />
+	<link rel="preload" as="image"
+		href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/download-57-1769031795145.jpeg?width=8000&amp;height=8000&amp;resize=contain" />
+	<link rel="stylesheet"
+		href="https://centraldosertanejo.vercel.app/_next/static/css/25f0e68c9d0481d6.css?dpl=dpl_34HeSyQFAHh5sppJbJcxUKnUDFfr"
+		data-precedence="next" />
+
+	<title>Central do Sertanejo | +3.000 Músicas pro Carro e Pendrive</title>
+	<meta name="description"
+		content="+3.000 músicas sertanejas para baixar. Funciona sem internet, sem propaganda, sem mensalidade." />
+	<link rel="icon" href="https://centraldosertanejo.vercel.app/favicon.ico" type="image/x-icon" sizes="16x16" />
+
+	<script>
+		window.pixelId = "695dcd5a6afd13ed8fbea28f";
+		var a = document.createElement("script");
+		a.setAttribute("async", "");
+		a.setAttribute("defer", "");
+		a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+		document.head.appendChild(a);
+	</script>
+	<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+		data-utmify-prevent-subids async defer></script>
+</head>
+
+<body class="antialiased">
+
+	<div class="min-h-screen bg-[#1a0f0a] text-white overflow-x-hidden">
+		<header class="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 md:hidden -translate-y-full"
+			style="padding-top:env(safe-area-inset-top)">
+
+			<div class="flex items-center justify-between px-4 h-[60px]">
+				<div class="flex items-center gap-2">
+
+					<div
+						class="w-8 h-8 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-music w-4 h-4 text-white" aria-hidden="true">
+							<path d="M9 18V5l12-2v13"></path>
+							<circle cx="6" cy="18" r="3"></circle>
+							<circle cx="18" cy="16" r="3"></circle>
+						</svg>
+
+					</div>
+					<span class="font-bold text-amber-400 text-sm">Central do Sertanejo</span>
+				</div>
+
+				<a href="#oferta-premium"
+					class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm px-4 py-2 rounded-full shadow-lg shadow-green-500/20">Garantir
+					acesso</a>
+
+			</div>
+		</header>
+
+
+
+		<section class="relative min-h-[85vh] flex items-center justify-center py-12 px-4">
+
+			<div class="absolute inset-0 bg-gradient-to-b from-[#2d1810] via-[#1a0f0a] to-[#0d0705]">
+			</div>
+
+
+			<div class="absolute inset-0 opacity-20">
+				<div class="absolute top-20 left-10 w-72 h-72 bg-amber-600 rounded-full blur-[120px]">
+				</div>
+
+
+				<div class="absolute bottom-20 right-10 w-96 h-96 bg-orange-700 rounded-full blur-[150px]">
+				</div>
+
+
+			</div>
+
+
+			<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+				<div
+					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-6">
+					🎵 SERTANEJO NO SEU CARRO
+				</div>
+
+				<h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight"><span
+						class="text-amber-400">+3.000 MÚSICAS</span><br /><span
+						class="text-white">SERTANEJAS</span><br /><span class="text-orange-400 text-3xl md:text-5xl">pro
+						seu CARRO e PENDRIVE</span></h1>
+				<p class="text-xl md:text-2xl text-gray-300 mb-6 max-w-2xl mx-auto">Modão, universitário, sofrência e
+					hits atuais. <span class="text-amber-400 font-bold">Tudo pronto pra você baixar</span> e levar pra
+					qualquer lugar.</p>
+
+				<div class="flex flex-wrap justify-center gap-4 mb-10 text-lg"><span
+						class="flex items-center gap-2 text-green-400">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-check w-5 h-5" aria-hidden="true">
+							<path d="M20 6 9 17l-5-5"></path>
+						</svg> Sem internet</span><span class="flex items-center gap-2 text-green-400">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-check w-5 h-5" aria-hidden="true">
+							<path d="M20 6 9 17l-5-5"></path>
+						</svg> Sem propaganda</span><span class="flex items-center gap-2 text-green-400">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-check w-5 h-5" aria-hidden="true">
+							<path d="M20 6 9 17l-5-5"></path>
+						</svg> Sem mensalidade</span>
+				</div>
+
+				<a href="#amostras-section"
+					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl shadow-amber-500/30 transition-all duration-300 ">VER
+					UMA PRÉVIA</a>
+				<p class="text-gray-400 text-sm mt-4 flex items-center justify-center gap-2"><span
+						class="animate-bounce">↓</span> Escolha a opção ideal pra você logo abaixo</p>
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<section class="relative py-20 px-4 overflow-hidden">
+
+			<div class="absolute inset-0"
+				style="background:radial-gradient(ellipse at center, transparent 0%, rgba(13, 7, 5, 0.7) 100%), linear-gradient(180deg, #2a1a12 0%, #1f1410 50%, #1a0f0a 100%)">
+			</div>
+
+
+			<div class="absolute inset-0 opacity-30"
+				style="background-image:url(&quot;data:image/svg+xml,%3Csvg width=&#x27;60&#x27; height=&#x27;60&#x27; viewBox=&#x27;0 0 60 60&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27;%3E%3Cg fill=&#x27;none&#x27; fill-rule=&#x27;evenodd&#x27;%3E%3Cg fill=&#x27;%234a3020&#x27; fill-opacity=&#x27;0.3&#x27;%3E%3Cpath d=&#x27;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&#x27;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;)">
+			</div>
+
+
+			<div class="relative z-10 max-w-6xl mx-auto">
+				<div class="text-center mb-14">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-4">O que você recebe <span
+							class="text-amber-400">ao liberar o acesso</span></h2>
+					<p class="text-gray-400 text-lg md:text-xl">Tudo pronto pra você baixar, copiar pro pendrive e
+						curtir</p>
+
+				</div>
+
+
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-wifi-off w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<path d="M12 20h.01"></path>
+									<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+									<path d="M5 12.859a10 10 0 0 1 5.17-2.69"></path>
+									<path d="M19 12.859a10 10 0 0 0-2.007-1.523"></path>
+									<path d="M2 8.82a15 15 0 0 1 4.177-2.643"></path>
+									<path d="M22 8.82a15 15 0 0 0-11.288-3.764"></path>
+									<path d="m2 2 20 20"></path>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Funciona Offline</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Ouça no carro ou na
+									estrada sem precisar de sinal</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-volume2 lucide-volume-2 w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<path
+										d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z">
+									</path>
+									<path d="M16 9a5 5 0 0 1 0 6"></path>
+									<path d="M19.364 18.364a9 9 0 0 0 0-12.728"></path>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Zero Propaganda</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Nenhum anúncio
+									interrompendo suas músicas favoritas</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-credit-card w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<rect width="20" height="14" x="2" y="5" rx="2"></rect>
+									<line x1="2" x2="22" y1="10" y2="10"></line>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Sem Mensalidade</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Pague uma vez só e use pra
+									sempre</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-usb w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<circle cx="10" cy="7" r="1"></circle>
+									<circle cx="4" cy="20" r="1"></circle>
+									<path d="M4.7 19.3 19 5"></path>
+									<path d="m21 3-3 1 2 2Z"></path>
+									<path d="M9.26 7.68 5 12l2 5"></path>
+									<path d="m10 14 5 2 3.5-3.5"></path>
+									<path d="m18 12 1-1 1 1-1 1Z"></path>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Pronto pro Pendrive</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Arquivos organizados, é só
+									copiar e usar</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-monitor-play w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<path
+										d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z">
+									</path>
+									<path d="M12 17v4"></path>
+									<path d="M8 21h8"></path>
+									<rect x="2" y="3" width="20" height="14" rx="2"></rect>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Compatível com Tudo</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Funciona no carro, TV,
+									multimídia e caixa de som</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<div
+						class="group relative bg-gradient-to-br from-[#2a1a12]/90 to-[#1a0f0a]/90 backdrop-blur-sm p-6 md:p-7 rounded-2xl border border-amber-900/30 shadow-xl shadow-black/20 hover:border-amber-700/50 hover:shadow-amber-900/20 transition-all duration-300">
+						<div
+							class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+
+
+						<div class="relative z-10 flex items-start gap-4">
+							<div
+								class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-600/30 flex items-center justify-center flex-shrink-0">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-download w-6 h-6 text-amber-400"
+									aria-hidden="true">
+									<path d="M12 15V3"></path>
+									<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+									<path d="m7 10 5 5 5-5"></path>
+								</svg>
+
+							</div>
+
+
+							<div>
+								<h3 class="text-lg md:text-xl font-bold text-white mb-1">Acesso Imediato</h3>
+								<p class="text-gray-400 text-sm md:text-base leading-relaxed">Link de download liberado
+									na hora após a compra</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<section id="amostras-section" class="relative py-16 md:py-20 px-4 overflow-hidden">
+			<style>
+				@keyframes equalizerBar1 {
+
+					0%,
+					100% {
+						height: 4px;
+					}
+
+					50% {
+						height: 16px;
+					}
+				}
+
+				@keyframes equalizerBar2 {
+
+					0%,
+					100% {
+						height: 8px;
+					}
+
+					50% {
+						height: 12px;
+					}
+				}
+
+				@keyframes equalizerBar3 {
+
+					0%,
+					100% {
+						height: 6px;
+					}
+
+					50% {
+						height: 18px;
+					}
+				}
+
+				.equalizer-bar-1 {
+					animation: equalizerBar1 0.5s ease-in-out infinite;
+				}
+
+				.equalizer-bar-2 {
+					animation: equalizerBar2 0.4s ease-in-out infinite 0.1s;
+				}
+
+				.equalizer-bar-3 {
+					animation: equalizerBar3 0.45s ease-in-out infinite 0.2s;
+				}
+			</style>
+
+			<div class="absolute inset-0"
+				style="background:radial-gradient(ellipse at top, rgba(42, 26, 18, 0.5) 0%, transparent 50%), radial-gradient(ellipse at bottom, rgba(42, 26, 18, 0.5) 0%, transparent 50%), linear-gradient(180deg, #1a0f0a 0%, #0d0705 100%)">
+			</div>
+
+
+			<div class="relative z-10 max-w-4xl mx-auto">
+				<div class="text-center mb-10 md:mb-12">
+					<h2 class="text-2xl md:text-3xl lg:text-4xl font-black mb-3">Escute agora uma <span
+							class="text-amber-400">amostra real</span></h2>
+					<p class="text-gray-400 text-base md:text-lg">Organizado por estilos e pronto pra usar no carro ou
+						pendrive</p>
+
+				</div>
+
+
+				<div class="relative mx-auto mb-10 md:mb-14 w-[92vw] max-w-[330px]">
+					<div class="w-full flex-shrink-0 px-1">
+						<div
+							class="relative bg-gradient-to-br from-[#2a1a12] to-[#1a0f0a] rounded-2xl p-3 sm:p-4 border border-amber-900/40 shadow-2xl shadow-black/50">
+
+							<div class="flex justify-center mb-2 sm:mb-3"><span
+									class="bg-amber-900/40 text-amber-400/90 text-[9px] sm:text-[10px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border border-amber-800/30">Prévia
+									de áudio (MP3)</span>
+							</div>
+
+
+							<div
+								class="relative rounded-xl overflow-hidden mb-3 sm:mb-4 shadow-lg shadow-black/40 mx-auto w-[58vw] min-w-[200px] max-w-[260px] aspect-square">
+								<img src="capa-chitaozinho.jpeg" alt="Chitãozinho &amp; Xororó - Evidências"
+									class="absolute inset-0 w-full h-full object-cover object-center"
+									draggable="false" />
+
+								<div class="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.4)]">
+								</div>
+
+
+							</div>
+
+
+							<style>
+								@keyframes eq-play {
+
+									0%,
+									100% {
+										transform: scaleY(0.3);
+									}
+
+									50% {
+										transform: scaleY(1);
+									}
+								}
+
+								.tocando-agora-wrapper {
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									gap: 6px;
+									color: #FFA500;
+									font-weight: bold;
+									font-size: 12px;
+									text-transform: uppercase;
+									margin-bottom: 10px;
+									opacity: 0;
+									visibility: hidden;
+									transition: all 0.3s ease;
+								}
+
+								.tocando-agora-wrapper.is-playing {
+									opacity: 1;
+									visibility: visible;
+								}
+
+								.eq-bar {
+									display: inline-block;
+									width: 3px;
+									max-height: 12px;
+									height: 12px;
+									background-color: #FFA500;
+									transform-origin: bottom;
+								}
+
+								.eq-b1 {
+									animation: eq-play 1.2s infinite ease-in-out -0.3s;
+								}
+
+								.eq-b2 {
+									animation: eq-play 1s infinite ease-in-out;
+								}
+
+								.eq-b3 {
+									animation: eq-play 1.4s infinite ease-in-out -0.6s;
+								}
+							</style>
+							<div class="tocando-agora-wrapper">
+								<div style="display: flex; align-items: flex-end; gap: 2px; height: 12px;">
+									<span class="eq-bar eq-b1"></span>
+									<span class="eq-bar eq-b2"></span>
+									<span class="eq-bar eq-b3"></span>
+								</div>
+								<span>TOCANDO AGORA</span>
+							</div>
