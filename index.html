@@ -2078,6 +2078,28 @@
 
 			// Smooth Scrolling Logic
 			document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const targetId = this.getAttribute('href'); if (targetId === '#') return; const targetElement = document.querySelector(targetId); if (targetElement) { const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: targetPosition - 50, behavior: 'smooth' }); } }); });
+
+			// UTM passthrough — repassa UTMs da landing page para os links de checkout
+			(function() {
+				const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'src', 'sck'];
+				const params = new URLSearchParams(window.location.search);
+				const utmParams = new URLSearchParams();
+
+				utmKeys.forEach(key => {
+					const val = params.get(key);
+					if (val) utmParams.set(key, val);
+				});
+
+				if (utmParams.toString()) {
+					document.querySelectorAll('a[href*="tilimcheckout.com"]').forEach(function(link) {
+						const url = new URL(link.href);
+						utmParams.forEach(function(value, key) {
+							url.searchParams.set(key, value);
+						});
+						link.href = url.toString();
+					});
+				}
+			})();
 		});
 	</script>
 </body>
