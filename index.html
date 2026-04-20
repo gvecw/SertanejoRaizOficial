@@ -48,24 +48,16 @@
 <body class="antialiased">
 
 	<div class="min-h-screen bg-[#1a0f0a] text-white overflow-x-hidden">
-		<header class="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 md:hidden -translate-y-full"
+		<header id="sticky-header" class="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 md:hidden -translate-y-full bg-[#1a0f0a] shadow-lg shadow-black/50"
 			style="padding-top:env(safe-area-inset-top)">
 
 			<div class="flex items-center justify-between px-4 h-[60px]">
 				<div class="flex items-center gap-2">
 
-					<div
-						class="w-8 h-8 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-							class="lucide lucide-music w-4 h-4 text-white" aria-hidden="true">
-							<path d="M9 18V5l12-2v13"></path>
-							<circle cx="6" cy="18" r="3"></circle>
-							<circle cx="18" cy="16" r="3"></circle>
-						</svg>
-
+					<div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-black border border-amber-900/50">
+						<img src="WhatsApp Image 2026-04-20 at 11.39.01.jpeg" alt="Logo Sertanejo Raiz" class="w-full h-full object-cover">
 					</div>
-					<span class="font-bold text-amber-400 text-sm">Central do Sertanejo</span>
+					<span class="font-bold text-amber-400 text-sm">Sertanejo Raiz</span>
 				</div>
 
 				<a href="#oferta-premium"
@@ -107,8 +99,8 @@
 					🎧 MODÕES PRO SEU PENDRIVE
 				</div>
 
-				<h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight"><span class="text-white">O tempo voou, mas a saudade ficou.</span><br /><span class="text-amber-400">Volte ao melhor tempo da sua vida com 3.000 modões.</span></h1>
-				<p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">Resgate as memórias mais profundas e as pessoas que marcaram a sua jornada a cada acorde. Prepare o coração</p>
+				<h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight"><span class="text-white">3.000 modões</span><br /><span class="text-amber-400">para o seu pendrive</span></h1>
+				<p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">O tempo voou, mas a saudade ficou. Volte ao melhor tempo da sua vida com 3.000 modões.</p>
 
 				<div class="relative w-full max-w-2xl mx-auto mb-5 flex justify-center">
 					<img src="3.000 MODÕES.png" alt="Mockup Sertanejo" class="w-full h-auto object-contain drop-shadow-2xl rounded-2xl border-2 border-amber-500/30 filter brightness-110">
@@ -2094,6 +2086,20 @@
 
 			// Smooth Scrolling Logic
 			document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const targetId = this.getAttribute('href'); if (targetId === '#') return; const targetElement = document.querySelector(targetId); if (targetElement) { const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: targetPosition - 50, behavior: 'smooth' }); } }); });
+
+			// Sticky Header Logic
+			const stickyHeader = document.getElementById('sticky-header');
+			if (stickyHeader) {
+				window.addEventListener('scroll', () => {
+					if (window.scrollY > 300) {
+						stickyHeader.classList.remove('-translate-y-full');
+						stickyHeader.classList.add('translate-y-0');
+					} else {
+						stickyHeader.classList.add('-translate-y-full');
+						stickyHeader.classList.remove('translate-y-0');
+					}
+				});
+			}
 
 			// UTM passthrough — repassa UTMs da landing page para os links de checkout
 			(function() {
