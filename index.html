@@ -1505,7 +1505,7 @@
 
 
 						</div>
-						<a href="https://tilimcheckout.com/checkout?p=bb7ed02b7a88ae74e8f2d4af791c1076"
+						<a href="javascript:void(0)" onclick="openUpsellPopup()"
 							class="block w-full bg-[#2d1810] text-white font-black text-lg text-center py-4 rounded-full border border-amber-900/40 hover:bg-[#3d2820] active:scale-[0.98] transition-all">ESCOLHER
 							ACESSO BÁSICO</a>
 					</div>
@@ -1846,6 +1846,63 @@
 			</div>
 		</footer>
 
+		<!-- Modal Upsell -->
+		<div id="upsell-modal" class="fixed inset-0 z-[9999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" style="background-color: rgba(0,0,0,0.85); padding: 16px;">
+			<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] border-2 border-amber-500 rounded-3xl w-full max-w-md p-6 sm:p-8 transform scale-95 transition-transform duration-300 relative shadow-[0_0_40px_rgba(249,115,22,0.3)]" id="upsell-content">
+				<!-- Close button -->
+				<button onclick="closeUpsellPopup()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors cursor-pointer z-10 w-8 h-8 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/80">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+				</button>
+				
+				<div class="text-center mt-2">
+					<div class="inline-block bg-amber-500 text-[#0d0705] font-black px-5 py-1.5 rounded-full text-[13px] tracking-wide mb-5 uppercase animate-pulse shadow-[0_0_15px_rgba(249,115,22,0.5)]">
+						⚠️ Espera aí! Não feche esta página
+					</div>
+					
+					<h2 class="text-[22px] md:text-2xl font-black text-white mb-3 leading-tight">
+						Leve o Pacote <span class="text-amber-400">COMPLETO</span> agora por apenas <span class="text-green-400 block mt-1 text-3xl">R$ 14,90</span>
+					</h2>
+					
+					<p class="text-gray-300 text-[15px] mb-8 leading-relaxed px-2">
+						Adicione ao seu carrinho: <b>+3.000 músicas</b>, bônus exclusivos, clipes em HD e acesso ao nosso Grupo VIP do WhatsApp. Tudo organizado em pastas.
+					</p>
+					
+					<div class="flex flex-col gap-4">
+						<a href="https://tilimcheckout.com/checkout?p=45f7f3cf6313edde3e87bd2cfe9e3f96" class="w-full inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-[17px] py-4 px-4 rounded-full shadow-lg shadow-amber-500/30 hover:scale-105 active:scale-95 transition-all text-center leading-tight border border-amber-400/30">
+							SIM! EU QUERO A OFERTA DE 14,90
+						</a>
+						
+						<a href="https://tilimcheckout.com/checkout?p=bb7ed02b7a88ae74e8f2d4af791c1076" class="w-full inline-block text-gray-400/80 text-[13px] hover:text-white transition-colors text-center underline px-2 py-3 cursor-pointer">
+							Quero continuar com a de 10,90
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function openUpsellPopup() {
+				const modal = document.getElementById('upsell-modal');
+				const content = document.getElementById('upsell-content');
+				if(modal && content) {
+					modal.classList.remove('opacity-0', 'pointer-events-none');
+					modal.classList.add('opacity-100');
+					content.classList.remove('scale-95');
+					content.classList.add('scale-100');
+				}
+			}
+			
+			function closeUpsellPopup() {
+				const modal = document.getElementById('upsell-modal');
+				const content = document.getElementById('upsell-content');
+				if(modal && content) {
+					modal.classList.remove('opacity-100');
+					modal.classList.add('opacity-0', 'pointer-events-none');
+					content.classList.remove('scale-100');
+					content.classList.add('scale-95');
+				}
+			}
+		</script>
 	</div>
 
 	<script>
