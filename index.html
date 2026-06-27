@@ -43,6 +43,7 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "wcdedxed9b");
 	</script>
+	<style>html { scroll-behavior: smooth; }</style>
 </head>
 
 <body class="antialiased">
@@ -2140,6 +2141,14 @@
     <p style="color:#6b7280; font-size:0.72rem; margin-top:12px;">Ainda não tem acesso? <a href="#oferta-premium" onclick="document.getElementById('modal-login').style.display='none'" style="color:#f97316; text-decoration:none;">Garanta agora</a></p>
   </div>
 </div>
+<script>
+	window.addEventListener('scroll', function() {
+		var menu = document.getElementById('menu-mobile');
+		if (menu && menu.style.display === 'flex') {
+			menu.style.display = 'none';
+		}
+	});
+</script>
 </body>
 
 </html>
