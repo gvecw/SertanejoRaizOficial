@@ -47,6 +47,30 @@
 
 <body class="antialiased">
 
+	<nav style="width:100%; background:#1a0800; border-bottom: 2px solid #f97316; padding: 10px 20px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:999; box-sizing:border-box; margin:0;">
+	  <div style="display:flex; align-items:center; gap:12px;">
+	    <img src="WhatsApp Image 2026-04-20 at 11.39.01.jpeg" style="width:44px; height:44px; border-radius:50%; object-fit:cover;">
+	    <div>
+	      <div style="color:#ffffff; font-size:0.95rem; font-weight:900; letter-spacing:1px;">SERTANEJO RAIZ</div>
+	      <div style="color:#f97316; font-size:0.7rem; font-weight:700; letter-spacing:2px;">OFICIAL</div>
+	    </div>
+	  </div>
+	  <div style="display:flex; align-items:center; gap:16px;">
+		<button style="background: transparent; border: 1.5px solid #f97316; color: #f97316; font-size: 0.8rem; font-weight: 700; padding: 6px 16px; border-radius: 9999px; cursor: pointer; white-space: nowrap;" onclick="document.getElementById('modal-login').style.display='flex'">Entrar</button>
+	    <div onclick="document.getElementById('menu-mobile').style.display = document.getElementById('menu-mobile').style.display === 'flex' ? 'none' : 'flex'" style="cursor:pointer; display:flex; flex-direction:column; gap:5px; padding:4px;">
+	      <span style="width:24px; height:2px; background:#ffffff; display:block;"></span>
+	      <span style="width:24px; height:2px; background:#ffffff; display:block;"></span>
+	      <span style="width:24px; height:2px; background:#ffffff; display:block;"></span>
+	    </div>
+	  </div>
+	</nav>
+	<div id="menu-mobile" style="display:none; flex-direction:column; background:#1a0800; width:100%; position:sticky; top:64px; z-index:998; border-bottom: 1px solid #3a1500;">
+	  <a href="#precos" onclick="document.getElementById('menu-mobile').style.display='none'" style="color:#ffffff; padding:14px 24px; font-size:0.95rem; font-weight:600; border-bottom:1px solid #2a1000; text-decoration:none;">Preços</a>
+	  <a href="#como-funciona" onclick="document.getElementById('menu-mobile').style.display='none'" style="color:#ffffff; padding:14px 24px; font-size:0.95rem; font-weight:600; border-bottom:1px solid #2a1000; text-decoration:none;">Como Funciona</a>
+	  <a href="#depoimentos" onclick="document.getElementById('menu-mobile').style.display='none'" style="color:#ffffff; padding:14px 24px; font-size:0.95rem; font-weight:600; border-bottom:1px solid #2a1000; text-decoration:none;">Depoimentos</a>
+	  <a href="#garantia" onclick="document.getElementById('menu-mobile').style.display='none'" style="color:#ffffff; padding:14px 24px; font-size:0.95rem; font-weight:600; border-bottom:1px solid #2a1000; text-decoration:none;">Garantia</a>
+	  <a href="#faq" onclick="document.getElementById('menu-mobile').style.display='none'" style="color:#ffffff; padding:14px 24px; font-size:0.95rem; font-weight:600; text-decoration:none;">Dúvidas Frequentes</a>
+	</div>
 	<div class="min-h-screen bg-[#1a0f0a] text-white overflow-x-hidden">
 		<header id="sticky-header" class="fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 md:hidden -translate-y-full bg-[#1a0f0a] shadow-lg shadow-black/50"
 			style="padding-top:env(safe-area-inset-top)">
@@ -94,19 +118,16 @@
 
 
 			<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-				<div
-					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
-					🎧 MODÕES PRO SEU PENDRIVE
-				</div>
 
-				<h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight"><span class="text-white">O tempo voou, mas a saudade ficou.</span><br /><span class="text-amber-400">Volte ao melhor tempo da sua vida com 3.000 modões.</span></h1>
-				<p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">Resgate as memórias mais profundas e as pessoas que marcaram a sua jornada a cada acorde. Prepare o coração</p>
+
+				<h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight"><span class="text-white">3.000 Modões Raiz que sumiram das plataformas</span><br /><span class="text-amber-400">agora tudo no seu pendrive e celular.</span></h1>
+				<p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">Leandro & Leonardo, Zezé Di Camargo & Luciano, Milionário & José Rico, Tião Carreiro & Pardinho, Chitãozinho & Xororó e muito mais...</p>
 
 				<a href="#oferta-premium" onclick="document.getElementById('oferta-premium').scrollIntoView({behavior: 'smooth'}); return false;"
-					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl shadow-amber-500/30 transition-all duration-300 mb-8">Garantir Meu Acesso</a>
+					class="inline-block bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl shadow-amber-500/30 transition-all duration-300 mb-8">Quero Meus Modões Agora</a>
 
 				<p class="text-lg md:text-xl text-green-400 font-bold text-center leading-snug mb-1">
-					Garantia de 7 dias
+					Garantia de 30 dias
 				</p>
 				<p class="text-sm md:text-base text-gray-300 text-center">
 					Acesso imediato via email e whatsapp
@@ -556,8 +577,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -635,8 +655,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -716,8 +735,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -797,8 +815,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -859,8 +876,8 @@
 									</div>
 									<div
 										class="relative rounded-xl overflow-hidden mb-3 sm:mb-4 shadow-lg shadow-black/40 mx-auto w-[58vw] min-w-[200px] max-w-[260px] aspect-square">
-										<img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/Marilia-Mendonca_Todos-os-Cantos_Bem-pior-que-eu_Todo-mundo-vai-sofrer_Rainha-da-Sofrencia-1-1769031316728.jpeg?width=800&height=800&resize=contain"
-											alt="Marília Mendonça"
+										<img src="Milionario_JoseRico.jpg"
+											alt="Milionário & José Rico"
 											class="absolute inset-0 w-full h-full object-cover object-center"
 											draggable="false" />
 										<div class="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.4)]"></div>
@@ -878,8 +895,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -906,7 +922,7 @@
 									</div>
 									<audio preload="metadata">
 										<source
-											src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/tiktok_video.w_7316238004228574469_audio-1769031400232.mp3"
+											src="tiktok_midiamix__7377111284824755462_audio.mp3"
 											type="audio/mpeg" />
 									</audio>
 									<div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-amber-900/20">
@@ -940,8 +956,8 @@
 									</div>
 									<div
 										class="relative rounded-xl overflow-hidden mb-3 sm:mb-4 shadow-lg shadow-black/40 mx-auto w-[58vw] min-w-[200px] max-w-[260px] aspect-square">
-										<img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/download-57-1769031795145.jpeg?width=800&height=800&resize=contain"
-											alt="Henrique &amp; Juliano"
+										<img src="tiao_carreiro.jpeg"
+											alt="Tião Carreiro e Pardinho"
 											class="absolute inset-0 w-full h-full object-cover object-center"
 											draggable="false" />
 										<div class="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.4)]"></div>
@@ -959,8 +975,7 @@
 									<div class="text-center mb-2 sm:mb-4">
 										<h3 class="text-base sm:text-lg font-bold text-white mb-0.5">Playlist Sertaneja
 											Completa</h3>
-										<p class="text-amber-400/70 text-[10px] sm:text-xs">Raiz • Universitário •
-											Sofrência • Hits atuais</p>
+										<p class="text-amber-400/70 text-[10px] sm:text-xs">Modão Raiz • Clássicos que marcaram época</p>
 									</div>
 									<p class="text-center text-gray-400 text-[11px] sm:text-xs mb-3 sm:mb-4">Seleção
 										Ouro - As Mais Tocadas</p>
@@ -987,7 +1002,7 @@
 									</div>
 									<audio preload="metadata">
 										<source
-											src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/20206799-3202-4c3a-995b-a38638d3238a/tiktok_emusicabr_7425681295038041349_audio-1769031993335.mp3"
+											src="tiktok_status.caipiira_7430043167442865413_audio.mp3"
 											type="audio/mpeg" />
 									</audio>
 									<div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-amber-900/20">
@@ -1138,7 +1153,7 @@
 
 
 
-		<section class="py-16 px-4 bg-[#1a0f0a]">
+		<section id="como-funciona" class="py-16 px-4 bg-[#1a0f0a]">
 
 			<div class="max-w-5xl mx-auto">
 				<h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-white">COMO <span class="text-amber-500">VOCÊ VAI RECEBER SEU MODÃO:</span></h2>
@@ -1177,7 +1192,7 @@
 						</div>
 
 						<h3 class="text-xl font-bold mb-2 text-amber-500">RECEBA NA MESMA HORA</h3>
-						<p class="text-gray-300 text-base">PIX pago? Pronto! Em questão de segundos, o sistema confirma e te envia tudo no Zap e no E-mail. Aí é só baixar, passar pro seu pendrive e colocar pra tocar!</p>
+						<p class="text-gray-300 text-base">PIX pago? Pronto! Em questão de segundos, o sistema confirma e te envia tudo no Zap e no E-mail. Aí é só baixar, jogar no seu pendrive ou celular e colocar pra tocar!</p>
 
 					</div>
 
@@ -1192,7 +1207,7 @@
 
 
 
-		<section class="py-16 px-4 bg-[#0d0705]">
+		<section id="depoimentos" class="py-16 px-4 bg-[#0d0705]">
 
 			<div class="max-w-2xl mx-auto">
 
@@ -1204,13 +1219,10 @@
 				</div>
 
 
-				<div class="relative" id="testimonial-slider-container">
-					<div id="testimonial-slider" class="flex overflow-hidden relative">
-						<div id="testimonial-slider-track"
-							class="flex transition-transform duration-500 ease-in-out w-full">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 							<!-- Slide 1 -->
-							<div class="w-full flex-shrink-0">
+							<div class="w-full">
 								<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] rounded-2xl p-6 md:p-8 border border-amber-900/30 shadow-xl">
 									<div class="flex items-center gap-1 mb-4"><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span></div>
 									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Coloquei no pendrive do carro e virou uma festa! Tem TUDO, só clássico raiz.&quot;</p>
@@ -1225,7 +1237,7 @@
 							</div>
 
 							<!-- Slide 2 -->
-							<div class="w-full flex-shrink-0">
+							<div class="w-full">
 								<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] rounded-2xl p-6 md:p-8 border border-amber-900/30 shadow-xl">
 									<div class="flex items-center gap-1 mb-4"><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span></div>
 									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Melhor investimento! Relembrei a época que viajava com meu pai escutando Tião Carreiro. Qualidade do áudio tá impecável.&quot;</p>
@@ -1240,7 +1252,7 @@
 							</div>
 
 							<!-- Slide 3 -->
-							<div class="w-full flex-shrink-0">
+							<div class="w-full">
 								<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] rounded-2xl p-6 md:p-8 border border-amber-900/30 shadow-xl">
 									<div class="flex items-center gap-1 mb-4"><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span></div>
 									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Comprei pra colocar na caminhonete e ir pra roça. Só modão rasgado, não tem uma música ruim, bom demais.&quot;</p>
@@ -1255,22 +1267,22 @@
 							</div>
 
 							<!-- Slide 4 -->
-							<div class="w-full flex-shrink-0">
+							<div class="w-full">
 								<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] rounded-2xl p-6 md:p-8 border border-amber-900/30 shadow-xl">
 									<div class="flex items-center gap-1 mb-4"><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span></div>
-									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Acabou o sofrimento sem sinal de rádio na estrada. Salva a viagem! Organizado certinho por pastas.&quot;</p>
+									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Fui procurar Fio de Cabelo do Milionário & José Rico no Spotify e não achei. Aqui tem, e ainda veio mais 2.999 músicas junto. Melhor R$19,90 que já gastei.&quot;</p>
 									<div class="flex items-center gap-3">
 										<img src="depoimento4.jpg" alt="Foto Perfil" class="w-12 h-12 rounded-full object-cover ring-1 ring-amber-600/50" />
 										<div>
-											<p class="font-bold text-white text-base">Roberto Nunes</p>
-											<p class="text-gray-500 text-sm">Londrina - PR</p>
+											<p class="font-bold text-white text-base">José Ribeiro</p>
+											<p class="text-gray-500 text-sm">Goiânia - GO</p>
 										</div>
 									</div>
 								</div>
 							</div>
 
 							<!-- Slide 5 -->
-							<div class="w-full flex-shrink-0">
+							<div class="w-full">
 								<div class="bg-gradient-to-br from-[#1a0f0a] to-[#0d0705] rounded-2xl p-6 md:p-8 border border-amber-900/30 shadow-xl">
 									<div class="flex items-center gap-1 mb-4"><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span><span class="text-amber-400 text-xl">★</span></div>
 									<p class="text-gray-200 text-base md:text-lg mb-6 italic leading-relaxed">&quot;Minha esposa deu de presente, já tá no som do carro e não tiro mais. Lembrança boa demais.&quot;</p>
@@ -1284,71 +1296,7 @@
 								</div>
 							</div>
 
-						</div>
-					</div>
-
-					<div class="flex items-center justify-center gap-4 mt-6">
-						<button id="testimonial-prev"
-							class="w-10 h-10 rounded-full bg-amber-900/30 border border-amber-800/50 flex items-center justify-center text-amber-400 hover:bg-amber-900/50 transition-colors z-10 cursor-pointer">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-5 h-5 cursor-pointer" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
-						</button>
-
-						<div id="testimonial-dots" class="flex items-center gap-2">
-							<button class="w-6 h-2.5 rounded-full transition-all bg-amber-400 cursor-pointer" data-slide="0"></button>
-							<button class="w-2.5 h-2.5 rounded-full transition-all bg-amber-900/50 hover:bg-amber-400/50 cursor-pointer" data-slide="1"></button>
-							<button class="w-2.5 h-2.5 rounded-full transition-all bg-amber-900/50 hover:bg-amber-400/50 cursor-pointer" data-slide="2"></button>
-							<button class="w-2.5 h-2.5 rounded-full transition-all bg-amber-900/50 hover:bg-amber-400/50 cursor-pointer" data-slide="3"></button>
-							<button class="w-2.5 h-2.5 rounded-full transition-all bg-amber-900/50 hover:bg-amber-400/50 cursor-pointer" data-slide="4"></button>
-						</div>
-
-						<button id="testimonial-next"
-							class="w-10 h-10 rounded-full bg-amber-900/30 border border-amber-800/50 flex items-center justify-center text-amber-400 hover:bg-amber-900/50 transition-colors z-10 cursor-pointer">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5 cursor-pointer" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
-						</button>
-					</div>
 				</div>
-
-				<script>
-					document.addEventListener('DOMContentLoaded', () => {
-						const track = document.getElementById('testimonial-slider-track');
-						const prevBtn = document.getElementById('testimonial-prev');
-						const nextBtn = document.getElementById('testimonial-next');
-						const dots = document.querySelectorAll('#testimonial-dots button');
-
-						let currentIndex = 0;
-						const totalSlides = 5;
-
-						function updateSlider() {
-							track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-							dots.forEach((dot, index) => {
-								if (index === currentIndex) {
-									dot.classList.remove('w-2.5', 'bg-amber-900/50', 'hover:bg-amber-400/50');
-									dot.classList.add('w-6', 'bg-amber-400');
-								} else {
-									dot.classList.add('w-2.5', 'bg-amber-900/50', 'hover:bg-amber-400/50');
-									dot.classList.remove('w-6', 'bg-amber-400');
-								}
-							});
-						}
-
-						if (prevBtn && nextBtn) {
-							prevBtn.addEventListener('click', () => {
-								currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
-								updateSlider();
-							});
-							nextBtn.addEventListener('click', () => {
-								currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
-								updateSlider();
-							});
-							dots.forEach((dot) => {
-								dot.addEventListener('click', (e) => {
-									currentIndex = parseInt(e.target.getAttribute('data-slide'));
-									updateSlider();
-								});
-							});
-						}
-					});
-				</script>
 
 				<p class="text-center text-gray-500 text-sm mt-8">+ de 1.981 pessoas já garantiram o acesso</p>
 
@@ -1368,7 +1316,7 @@
 
 
 
-		<section id="ofertas" class="py-16 px-4 bg-[#0d0705]">
+		<section class="py-16 px-4 bg-[#0d0705]">
 
 			<div class="max-w-lg mx-auto">
 
@@ -1382,7 +1330,7 @@
 
 				<div
 					style="max-width: 450px; margin: 0 auto 40px auto; background-color: rgba(28, 17, 10, 0.8); border: 2px solid #FFA500; border-radius: 12px; padding: 25px; box-shadow: 0 0 25px rgba(255, 165, 0, 0.15); text-align: center;">
-					<img src="comunidade-vip.jpeg" alt="Grupo VIP Exclusivo"
+					<img src="comunidade-vip-nova.png" alt="Grupo VIP Exclusivo"
 						style="width: 100%; max-width: 320px; height: auto; border-radius: 8px; margin: 0 auto 20px auto; display: block; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" />
 					<h3 style="font-size: 22px; font-weight: bold; color: #FFFFFF; margin-bottom: 12px; margin-top: 0;">
 						🎁 Acesso ao Grupo VIP</h3>
@@ -1391,7 +1339,7 @@
 						pedindo músicas e recebendo novidades em primeira mão!</p>
 				</div>
 
-				<div class="text-center mb-10">
+				<div id="precos" class="text-center mb-10">
 					<h2 class="text-2xl md:text-3xl lg:text-4xl font-black mb-3">Escolha sua <span
 							class="text-amber-400">opção de acesso</span></h2>
 					<p class="text-gray-400 text-base">Libere agora e use no pendrive/carro sem internet.</p>
@@ -1420,7 +1368,7 @@
 									class="lucide lucide-check w-4 h-4 text-green-400 flex-shrink-0" aria-hidden="true">
 									<path d="M20 6 9 17l-5-5"></path>
 								</svg>
-								<span>Raiz, modão, universitário e hits</span>
+								<span>Modão Raiz e Clássicos que marcaram época</span>
 							</li>
 							<li class="flex items-center gap-3 text-gray-300 text-[15px] leading-relaxed"><svg
 									xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1468,7 +1416,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-4 h-4 text-red-500 flex-shrink-0" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
 								<span
 									style="text-decoration: line-through; text-decoration-color: #FF0000; color: #9CA3AF;">Sem
-									Videoclipes Sertanejos em HD</span>
+									Bônus Exclusivos</span>
 							</li>
 							<li class="flex items-center gap-3 text-gray-300 text-[15px] leading-relaxed">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-4 h-4 text-red-500 flex-shrink-0" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
@@ -1522,7 +1470,7 @@
 						</div>
 
 						<h3 class="text-2xl font-black text-amber-400 mb-1">Pacote Completo</h3>
-						<p class="text-gray-300 text-base mb-5">Sempre atualizado + videoclipes</p>
+						<p class="text-gray-300 text-base mb-5">Os clássicos que marcaram época</p>
 						<ul class="space-y-3 mb-6">
 							<li class="flex items-center gap-3 text-white text-[15px] leading-relaxed">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1540,7 +1488,7 @@
 									class="lucide lucide-check w-4 h-4 text-green-400 flex-shrink-0" aria-hidden="true">
 									<path d="M20 6 9 17l-5-5"></path>
 								</svg>
-								<span>Inclui Raiz, Universitário e Hits Atuais</span>
+								<span>Inclui Modão Raiz, Clássicos e as melhores duplas</span>
 							</li>
 							<li class="flex items-center gap-3 text-white text-[15px] leading-relaxed"><svg
 									xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1634,21 +1582,21 @@
 
 		</section>
 
-		<section class="py-12 px-4 bg-[#0d0705]">
+		<section id="garantia" class="py-12 px-4 bg-[#0d0705]">
 			<div
-				style="border: 2px solid #00C853; background: #000000; padding: 40px; border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center; max-width: 600px; margin: 0 auto;">
+				style="border: 2px solid #f97316; background: #000000; padding: 40px; border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center; max-width: 600px; margin: 0 auto;">
 
-				<img src="garantia-7-dias.png" alt="Selo de Garantia" style="width: 130px; margin-bottom: 24px;" />
+				<img src="1fedca32a35edb39d1d6f8b613aab9a5-removebg-preview (1) (1).png" alt="Selo de Garantia" style="width: 130px; margin-bottom: 24px;" />
 
 				<h2 style="color: #ffffff; font-size: 28px; font-weight: bold; margin-bottom: 24px;">Garantia
-					incondicional de 7 dias</h2>
+					incondicional de 30 dias</h2>
 
 				<p style="color: #e5e7eb; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
-					Você tem 7 dias para baixar e testar as músicas no seu pen drive, carro ou caminhão. Se não curtir a
+					Você tem 30 dias para baixar e testar as músicas no seu pendrive, celular ou carro. Se não curtir a
 					qualidade ou o repertório, devolvemos 100% do seu dinheiro. Sem perguntas e sem letras miúdas.
 				</p>
 
-				<div style="border: 1px solid #00C853; padding: 20px; border-radius: 8px; width: 100%;">
+				<div style="border: 1px solid #f97316; padding: 20px; border-radius: 8px; width: 100%;">
 					<p style="color: #ffffff; font-weight: bold; margin: 0; font-size: 16px;">
 						Seu investimento está 100% protegido. Você não tem nada a perder e milhares de músicas a ganhar.
 					</p>
@@ -1657,7 +1605,7 @@
 			</div>
 		</section>
 
-		<section class="py-16 px-4 bg-[#0d0705]">
+		<section id="faq" class="py-16 px-4 bg-[#0d0705]">
 
 			<div class="max-w-lg mx-auto">
 				<h2 class="text-2xl md:text-3xl font-black text-center mb-3">DÚVIDAS <span
@@ -1826,21 +1774,20 @@
 
 		</section>
 
-		<footer
-			style="background-color: #0d0d0d; border-top: 1px solid #333; padding: 40px 20px; text-align: center; color: #6B7280; font-size: 12px; line-height: 1.6; font-family: sans-serif;">
-			<div
-				style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 15px;">
-				<a href="#"
-					style="color: #9CA3AF; text-decoration: none; font-weight: bold; display: block; margin-bottom: 15px;">Termos
-					de Uso | Políticas de Privacidade</a>
-				<p style="margin: 0;">Este site não faz parte do site do Facebook ou da Meta Platforms Inc. Além disso,
-					este site NfO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da Meta
-					Platforms, Inc.</p>
-				<p style="margin: 0;">Central do Sertanejo - CNPJ: 12.345.678/0001-00 | Contato:
-					suporte@centraldosertanejo.com</p>
-				<p style="margin: 0;">© 2026 Central do Sertanejo. Todos os direitos reservados.</p>
-			</div>
-		</footer>
+		<section style="background:#1a0a00; padding: 48px 20px; text-align:center;">
+		  <a href="#oferta-premium" onclick="document.getElementById('oferta-premium').scrollIntoView({behavior:'smooth'}); return false;"
+		    style="display:inline-block; background: linear-gradient(135deg, #f97316, #ea580c); color:#fff; font-size:1.3rem; font-weight:900; padding:20px 48px; border-radius:9999px; text-decoration:none; box-shadow: 0 0 30px rgba(249,115,22,0.4); letter-spacing:0.5px;">
+		    ⚡ QUERO MEU ACESSO AGORA!
+		  </a>
+		  <p style="color:#9ca3af; font-size:0.85rem; margin-top:12px;">Acesso imediato via WhatsApp e E-mail · Garantia de 30 dias</p>
+		</section>
+
+<footer style="background:#0d0d0d; padding: 32px 20px; text-align:center;">
+  <img src="WhatsApp Image 2026-04-20 at 11.39.01.jpeg" alt="Sertanejo Raiz" style="width:100px; height:100px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px auto;">
+  <p style="color:#6b7280; font-size:0.8rem; margin:8px 0;">Central do Sertanejo | Contato: suporte@centraldosertanejo.com</p>
+  <p style="color:#6b7280; font-size:0.8rem; margin:8px 0;">© 2026 Central do Sertanejo. Todos os direitos reservados.</p>
+  <p style="color:#4b5563; font-size:0.72rem; margin-top:12px;">Este site não faz parte do site do Facebook ou da Meta Platforms Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da Meta Platforms, Inc.</p>
+</footer>
 
 		<!-- Modal Upsell -->
 		<div id="upsell-modal" class="fixed inset-0 z-[9999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" style="background-color: rgba(0,0,0,0.85); padding: 16px;">
@@ -1931,10 +1878,19 @@
 				}
 
 				const indicator = audio.closest('.relative') ? audio.closest('.relative').querySelector('.tocando-agora-wrapper') : null;
-				if (indicator) {
-					audio.addEventListener('play', () => indicator.classList.add('is-playing'));
-					audio.addEventListener('pause', () => indicator.classList.remove('is-playing'));
-				}
+				const btn = playBtnContainer ? playBtnContainer.querySelector('button') : null;
+				
+				const playSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-4 h-4 text-white ml-0.5" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>';
+				const pauseSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pause w-4 h-4 text-white" aria-hidden="true"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+
+				audio.addEventListener('play', () => {
+					if (indicator) indicator.classList.add('is-playing');
+					if (btn) btn.innerHTML = pauseSvg;
+				});
+				audio.addEventListener('pause', () => {
+					if (indicator) indicator.classList.remove('is-playing');
+					if (btn) btn.innerHTML = playSvg;
+				});
 
 				// Time Update Logic
 				audio.addEventListener('timeupdate', () => {
@@ -2040,10 +1996,23 @@
 				}
 			}
 
+			function handleAudioNavigation() {
+				document.querySelectorAll('#audio-slider-track audio').forEach(a => {
+					a.pause();
+					a.currentTime = 0;
+				});
+				const slides = document.querySelectorAll('#audio-slider-track > div');
+				if (slides[currentAudioSlide]) {
+					const newAudio = slides[currentAudioSlide].querySelector('audio');
+					if (newAudio) newAudio.play().catch(e => console.log('Autoplay block:', e));
+				}
+			}
+
 			function nextAudioSlide() {
 				if (currentAudioSlide < totalAudioSlides - 1) {
 					currentAudioSlide++;
 					updateAudioSlider();
+					handleAudioNavigation();
 				}
 			}
 
@@ -2051,6 +2020,7 @@
 				if (currentAudioSlide > 0) {
 					currentAudioSlide--;
 					updateAudioSlider();
+					handleAudioNavigation();
 				}
 			}
 
@@ -2061,8 +2031,11 @@
 
 			audioDots.forEach((dot, index) => {
 				dot.addEventListener('click', () => {
-					currentAudioSlide = index;
-					updateAudioSlider();
+					if (currentAudioSlide !== index) {
+						currentAudioSlide = index;
+						updateAudioSlider();
+						handleAudioNavigation();
+					}
 				});
 			});
 
@@ -2154,6 +2127,19 @@
 			})();
 		});
 	</script>
+
+<div id="modal-login" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#1a0800; border:1.5px solid #f97316; border-radius:12px; padding:32px 24px; width:90%; max-width:360px; text-align:center; position:relative;">
+    <button onclick="document.getElementById('modal-login').style.display='none'" style="position:absolute; top:12px; right:16px; background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
+    <img src="WhatsApp Image 2026-04-20 at 11.39.01.jpeg" style="width:64px; height:64px; border-radius:50%; object-fit:cover; margin:0 auto 12px auto; display:block;" alt="Logo">
+    <h3 style="color:#fff; font-size:1.1rem; font-weight:900; margin-bottom:4px;">Área de Membros</h3>
+    <p style="color:#9ca3af; font-size:0.8rem; margin-bottom:20px;">Digite o e-mail e senha recebidos após a compra</p>
+    <input type="email" placeholder="Seu e-mail de compra" style="width:100%; padding:12px; border-radius:8px; border:1px solid #3a1500; background:#2a0e00; color:#fff; font-size:0.9rem; margin-bottom:12px; box-sizing:border-box;">
+    <input type="password" placeholder="Sua senha" style="width:100%; padding:12px; border-radius:8px; border:1px solid #3a1500; background:#2a0e00; color:#fff; font-size:0.9rem; margin-bottom:16px; box-sizing:border-box;">
+    <button style="width:100%; background:#f97316; color:#fff; font-weight:900; padding:14px; border-radius:9999px; border:none; font-size:1rem; cursor:pointer;">Acessar Meus Modões</button>
+    <p style="color:#6b7280; font-size:0.72rem; margin-top:12px;">Ainda não tem acesso? <a href="#oferta-premium" onclick="document.getElementById('modal-login').style.display='none'" style="color:#f97316; text-decoration:none;">Garanta agora</a></p>
+  </div>
+</div>
 </body>
 
 </html>
