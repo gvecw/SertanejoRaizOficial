@@ -1,0 +1,2203 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora Animada – +1.000 Desenhos Clássicos dos anos 80, 90 e 2000</title>
+    <meta name="description"
+        content="Acesse mais de 1.000 episódios dos melhores desenhos da sua infância. Pague uma única vez e assista para sempre. R$ 9,90 com acesso imediato.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ══════════════════════════════════════════════════
+           MASTER CSS — HORA ANIMADA (Reference Visual Match)
+           Paleta: Red header · Dark Navy hero/content ·
+                   Cyan pricing · Yellow titles · Green CTAs
+        ══════════════════════════════════════════════════ */
+
+        /* ── 1. TOKENS ── */
+        :root {
+            --red: #e30a17;
+            --navy: #010617;
+            --cyan-bg: #33CCFF;
+            --yellow: #FFCC00;
+            --green: #00FF00;
+            --green-shadow: #004400;
+            --white: #ffffff;
+            --gray-text: #A0AEC0;
+            --dot-dark: rgba(255, 255, 255, 0.06);
+            --dot-cyan: rgba(0, 0, 0, 0.12);
+        }
+
+        /* ── 2. BASE ── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--navy);
+            color: var(--white);
+            margin: 0;
+        }
+
+        .font-bangers {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1.5px;
+        }
+
+        /* ── 3. HEADER ── */
+        .comic-header {
+            background-color: var(--red) !important;
+            border-bottom: 4px solid #000 !important;
+        }
+
+        .comic-title {
+            color: var(--yellow) !important;
+            text-shadow:
+                0 0 12px rgba(255, 204, 0, 0.9),
+                0 0 30px rgba(255, 204, 0, 0.5),
+                2px 2px 0 #000,
+                -1px -1px 0 #000 !important;
+        }
+
+        /* ── 4. DARK NAVY SECTIONS + DOTS PATTERN ──
+           Hero, Testimonials, Bonuses, FAQ              */
+        .hero-dark,
+        .testimonials-dark,
+        .bonuses-section,
+        .faq-section {
+            background-color: var(--navy) !important;
+            background-image: radial-gradient(var(--dot-dark) 1px, transparent 1px) !important;
+            background-size: 20px 20px !important;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Remove leftover pseudo-element noise (CRT scanlines, color blobs) */
+        .hero-dark::before,
+        .testimonials-dark::before,
+        .testimonials-dark::after,
+        .bonuses-section::before {
+            display: none !important;
+        }
+
+        /* ── 5. YELLOW HEADING — MASSIVE NEON GLOW ── */
+        .neon-yellow,
+        .bonus-title,
+        .pricing-title,
+        .faq-title,
+        .neon-title-red,
+        .comic-title {
+            color: var(--yellow) !important;
+            text-shadow:
+                0 0 10px rgba(255, 204, 0, 1),
+                0 0 25px rgba(255, 204, 0, 0.85),
+                0 0 55px rgba(255, 180, 0, 0.55),
+                0 0 100px rgba(255, 150, 0, 0.3),
+                2px 2px 0 #000,
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000 !important;
+        }
+
+        /* ── 6. HERO STATS CARD (neon-card) — blue glow border ── */
+        .neon-card {
+            background: rgba(0, 10, 40, 0.7) !important;
+            border: 2px solid #00D4FF !important;
+            border-radius: 16px !important;
+            box-shadow:
+                0 0 10px rgba(0, 212, 255, 0.6),
+                0 0 28px rgba(0, 212, 255, 0.3),
+                inset 0 0 20px rgba(0, 212, 255, 0.05) !important;
+        }
+
+        /* ── 7. FLOATING EMOJIS ── */
+        .float-icon {
+            animation: floatBob 4s ease-in-out infinite;
+        }
+
+        .float-icon:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+
+        .float-icon:nth-child(3) {
+            animation-delay: 1.2s;
+        }
+
+        .float-icon:nth-child(4) {
+            animation-delay: 1.8s;
+        }
+
+        .float-icon:nth-child(5) {
+            animation-delay: 2.4s;
+        }
+
+        .float-icon:nth-child(6) {
+            animation-delay: 3.0s;
+        }
+
+        @keyframes floatBob {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(-3deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(3deg);
+            }
+        }
+
+        /* ── 8. CTA BUTTONS — Bright Green, Pulsing ── */
+        .cta-pulse,
+        .btn-comic,
+        .btn-premium-cta {
+            background: var(--green) !important;
+            color: #000 !important;
+            border: 3px solid #005500 !important;
+            box-shadow: 0 8px 0 #003300, 0 0 0 0 rgba(0, 255, 0, 0.5) !important;
+            animation: ctaPulse 1.6s ease-in-out infinite !important;
+            transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+            font-weight: 900 !important;
+        }
+
+        .cta-pulse:hover,
+        .btn-comic:hover,
+        .btn-premium-cta:hover {
+            transform: translateY(-3px) !important;
+            box-shadow: 0 12px 0 #003300, 0 0 30px rgba(0, 255, 0, 0.5) !important;
+        }
+
+        .cta-pulse:active,
+        .btn-comic:active,
+        .btn-premium-cta:active {
+            transform: translateY(5px) !important;
+            box-shadow: 0 3px 0 #003300 !important;
+        }
+
+        @keyframes ctaPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 8px 0 #003300, 0 0 0 0 rgba(0, 255, 0, 0.6);
+            }
+
+            50% {
+                box-shadow: 0 8px 0 #003300, 0 0 0 16px rgba(0, 255, 0, 0);
+            }
+        }
+
+        /* also override premiumPulse keyframe */
+        @keyframes premiumPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 8px 0 #003300, 0 0 0 0 rgba(0, 255, 0, 0.6) !important;
+            }
+
+            50% {
+                box-shadow: 0 8px 0 #003300, 0 0 0 16px rgba(0, 255, 0, 0) !important;
+            }
+        }
+
+        /* ── 9. TRUST BADGES ── */
+        .trust-badge {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 99px;
+            padding: 6px 14px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.75);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ── 10. TESTIMONIALS — flat dark glass cards, no themed colors ── */
+        .card-crt,
+        .card-vhs,
+        .card-cartridge {
+            background: rgba(255, 255, 255, 0.04) !important;
+            border: 1.5px solid rgba(255, 204, 0, 0.25) !important;
+            box-shadow: 0 0 14px rgba(255, 204, 0, 0.08) !important;
+            border-radius: 14px !important;
+        }
+
+        .card-crt::before,
+        .card-crt::after,
+        .card-vhs::before,
+        .card-cartridge::after {
+            display: none !important;
+        }
+
+        .card-crt .crt-screen {
+            background: transparent !important;
+            border: none !important;
+        }
+
+        .card-crt .crt-screen::after {
+            display: none !important;
+        }
+
+        .avatar-crt,
+        .avatar-vhs,
+        .avatar-cartridge {
+            border-color: var(--yellow) !important;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.35) !important;
+        }
+
+        .name-crt,
+        .name-vhs,
+        .name-cart {
+            color: var(--yellow) !important;
+            text-shadow: 0 0 8px rgba(255, 204, 0, 0.5) !important;
+        }
+
+        .stars-glow {
+            text-shadow: 0 0 8px #ffcc00;
+        }
+
+        .vhs-label {
+            background: rgba(255, 204, 0, 0.15) !important;
+            border-color: var(--yellow) !important;
+            color: var(--yellow) !important;
+        }
+
+        .pixel-label {
+            background: rgba(255, 204, 0, 0.1) !important;
+            border-color: var(--yellow) !important;
+            color: var(--yellow) !important;
+        }
+
+        /* ── 11. BONUS CARDS — colored neon borders restored per-card ── */
+        .bonus-card {
+            background: #0d1117 !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 14px !important;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }
+
+        .bonus-card:hover {
+            transform: translateY(-4px) !important;
+        }
+
+        /* Each bonus card gets its own color */
+        .bonus-card.blue {
+            border-color: rgba(0, 212, 255, 0.5) !important;
+        }
+
+        .bonus-card.blue:hover {
+            border-color: #00D4FF !important;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.35) !important;
+        }
+
+        .bonus-card.purple {
+            border-color: rgba(160, 80, 255, 0.5) !important;
+        }
+
+        .bonus-card.purple:hover {
+            border-color: #a050ff !important;
+            box-shadow: 0 0 20px rgba(160, 80, 255, 0.35) !important;
+        }
+
+        .bonus-card.orange {
+            border-color: rgba(255, 140, 0, 0.5) !important;
+        }
+
+        .bonus-card.orange:hover {
+            border-color: #ff8c00 !important;
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.35) !important;
+        }
+
+        .bonus-card.cyan {
+            border-color: rgba(0, 230, 210, 0.5) !important;
+        }
+
+        .bonus-card.cyan:hover {
+            border-color: #00e6d2 !important;
+            box-shadow: 0 0 20px rgba(0, 230, 210, 0.35) !important;
+        }
+
+        .bonus-card.card-restricted {
+            border-color: rgba(255, 40, 60, 0.5) !important;
+        }
+
+        .bonus-card.card-restricted:hover {
+            border-color: #ff2233 !important;
+            box-shadow: 0 0 20px rgba(255, 40, 60, 0.35) !important;
+        }
+
+        .bonus-card.green {
+            border-color: rgba(0, 220, 80, 0.5) !important;
+        }
+
+        .bonus-card.green:hover {
+            border-color: #00dc50 !important;
+            box-shadow: 0 0 20px rgba(0, 220, 80, 0.35) !important;
+        }
+
+        /* Icon containers match their card color */
+        .icon-blue {
+            background: rgba(0, 212, 255, 0.1) !important;
+            border-color: rgba(0, 212, 255, 0.4) !important;
+        }
+
+        .icon-purple {
+            background: rgba(160, 80, 255, 0.1) !important;
+            border-color: rgba(160, 80, 255, 0.4) !important;
+        }
+
+        .icon-orange {
+            background: rgba(255, 140, 0, 0.1) !important;
+            border-color: rgba(255, 140, 0, 0.4) !important;
+        }
+
+        .icon-cyan {
+            background: rgba(0, 230, 210, 0.1) !important;
+            border-color: rgba(0, 230, 210, 0.4) !important;
+        }
+
+        .icon-red {
+            background: rgba(255, 40, 60, 0.1) !important;
+            border-color: rgba(255, 40, 60, 0.4) !important;
+        }
+
+        .icon-green {
+            background: rgba(0, 220, 80, 0.1) !important;
+            border-color: rgba(0, 220, 80, 0.4) !important;
+        }
+
+        /* GRÁTIS = massive green, old-price muted */
+        .gratis-tag {
+            font-family: 'Bangers', cursive;
+            font-size: 26px !important;
+            letter-spacing: 2px !important;
+            color: var(--green) !important;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 24px rgba(0, 255, 0, 0.3) !important;
+        }
+
+        .old-price {
+            color: #666 !important;
+            text-decoration: line-through !important;
+        }
+
+        /* Savings bar */
+        .savings-bar {
+            background: rgba(0, 30, 0, 0.5) !important;
+            border: 1.5px solid rgba(0, 255, 0, 0.25) !important;
+            border-radius: 14px !important;
+        }
+
+        /* ── 12. PRICING SECTION — CYAN + HALFTONE ── */
+        .pricing-section {
+            background-color: var(--cyan-bg) !important;
+            background-image:
+                radial-gradient(var(--dot-cyan) 15%, transparent 15%) !important;
+            background-size: 12px 12px !important;
+        }
+
+        /* Pricing title must be readable on cyan = yellow with black outline */
+        .pricing-section .pricing-title {
+            color: var(--yellow) !important;
+        }
+
+        /* Pricing section subtext labels = dark */
+        .pricing-section p.text-xs,
+        .pricing-section p.text-cyan-500\/60 {
+            color: rgba(0, 0, 80, 0.7) !important;
+        }
+
+        /* Basic card: white background */
+        .card-basic {
+            background: #ffffff !important;
+            border: 2px solid #000 !important;
+            box-shadow: 6px 6px 0 #000 !important;
+            border-radius: 16px !important;
+        }
+
+        /* Basic card text overrides to dark on white */
+        .card-basic h4,
+        .card-basic p.text-white,
+        .card-basic p {
+            color: #111 !important;
+        }
+
+        .card-basic span.text-gray-300 {
+            color: #333 !important;
+        }
+
+        .card-basic span.text-red-400\/55 {
+            color: #cc0000 !important;
+            opacity: 0.55 !important;
+        }
+
+        .card-basic .icon-check {
+            color: var(--green) !important;
+        }
+
+        .card-basic .icon-x {
+            color: #cc0000 !important;
+        }
+
+        .card-basic .btn-ghost {
+            background: transparent !important;
+            border: 2px solid #555 !important;
+            color: #333 !important;
+            font-family: 'Bangers', cursive !important;
+            font-size: 20px !important;
+            letter-spacing: 2px !important;
+            text-transform: uppercase !important;
+        }
+
+        /* Premium card: pop-art yellow, massive black shadow — already handled by HTML .card-premium */
+        .card-premium {
+            background: var(--yellow) !important;
+            border: 4px solid #000 !important;
+            box-shadow: 12px 12px 0 #000 !important;
+        }
+
+        /* Premium feature list checkmarks: big green */
+        .card-premium .w-5.text-green-700 {
+            color: var(--green) !important;
+        }
+
+        /* Premium price: bright green outline */
+        .price-premium {
+            color: var(--green) !important;
+            -webkit-text-stroke: 3px #000 !important;
+            paint-order: stroke fill !important;
+            font-size: 72px !important;
+        }
+
+        /* "O MAIS VENDIDO" badge: red pill */
+        .badge-top {
+            background: var(--red) !important;
+            color: #fff !important;
+            border: 2px solid #000 !important;
+            box-shadow: 2px 2px 0 #000 !important;
+        }
+
+        /* Bonus inner box: pale yellow + red dash */
+        .bonus-inner-box {
+            background: #ffffcc !important;
+            border: 2.5px dashed var(--red) !important;
+        }
+
+        /* ── 13. FAQ — flat on navy, clean ── */
+        .faq-item {
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            background: rgba(255, 255, 255, 0.025) !important;
+        }
+
+        .faq-item:hover,
+        .faq-item.open {
+            border-color: rgba(255, 204, 0, 0.45) !important;
+            box-shadow: 0 0 14px rgba(255, 204, 0, 0.1) !important;
+        }
+
+        .faq-icon {
+            border-color: rgba(255, 204, 0, 0.45) !important;
+            color: var(--yellow) !important;
+        }
+
+        .faq-item.open .faq-icon {
+            background: rgba(255, 204, 0, 0.1) !important;
+        }
+
+        .faq-btn .faq-q {
+            color: #fff !important;
+        }
+
+        .faq-panel-inner {
+            color: var(--gray-text) !important;
+        }
+
+        /* ── 14. GLOBAL SPACING & MOBILE FIXES ── */
+        section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Full-width CTAs on mobile */
+        @media (max-width: 640px) {
+
+            .cta-pulse,
+            .btn-comic,
+            .btn-premium-cta {
+                width: 100% !important;
+            }
+
+            .card-basic,
+            .card-premium {
+                max-width: 100% !important;
+            }
+
+            .price-premium {
+                font-size: 56px !important;
+            }
+        }
+
+        /* Section breathing room */
+        .testimonials-dark {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+
+        .bonuses-section {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+
+        .pricing-section {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+
+        .faq-section {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+
+        /* Legacy classes (kept for compatibility) */
+        .comic-card {
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0 #000;
+        }
+
+        .bg-dark-section {
+            background-color: var(--navy);
+        }
+
+        .hero-dark {
+            background-color: var(--navy);
+            background-image: radial-gradient(var(--dot-dark) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* card-restricted hazard stripe */
+        .card-restricted {
+            border-color: rgba(255, 40, 60, 0.5) !important;
+        }
+
+        .card-restricted::after {
+            content: '' !important;
+            display: block !important;
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            right: 0 !important;
+            height: 6px !important;
+            background: repeating-linear-gradient(-45deg, #ff2233, #ff2233 6px, #220005 6px, #220005 12px) !important;
+            border-radius: 14px 14px 0 0 !important;
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <!-- ═══════════════════════════════════
+         HEADER
+    ═══════════════════════════════════ -->
+    <header class="comic-header py-3 text-center">
+        <p class="font-bangers comic-title text-3xl md:text-4xl uppercase tracking-widest">📺 Hora Animada</p>
+    </header>
+
+    <!-- ═══════════════════════════════════
+         HERO SECTION — DARK + NEON
+    ═══════════════════════════════════ -->
+    <section class="hero-dark w-full">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 pt-14 pb-16 flex flex-col items-center text-center">
+
+            <!-- Top badge -->
+            <div
+                class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/40 text-yellow-300 text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 animate-ping inline-block"></span>
+                Anos 80 · 90 · 2000 — A Coleção Definitiva
+            </div>
+
+            <!-- H1 — Bold, yellow, emotional -->
+            <h1 class="font-bangers neon-yellow text-5xl sm:text-6xl md:text-7xl leading-none mb-6 max-w-3xl">
+                Sinta-se Criança de Novo: Reviva as Melhores Tardes da Sua Vida!
+            </h1>
+
+            <!-- H2 — White, detailing the offer -->
+            <h2 class="text-white/90 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-10">
+                Tenha acesso imediato a mais de <strong class="text-white font-extrabold">1.000 episódios</strong> dos
+                desenhos que marcaram a sua infância.
+                Tudo desbloqueado para você assistir em qualquer dispositivo, quando e onde quiser.
+            </h2>
+
+            <!-- Floating cartoon emoji icons -->
+            <div class="flex items-center justify-center gap-4 mb-10 flex-wrap">
+                <span class="float-icon text-4xl md:text-5xl" title="Thundercats">⚡</span>
+                <span class="float-icon text-4xl md:text-5xl" title="Desenhos antigos">🎮</span>
+                <span class="float-icon text-4xl md:text-5xl" title="TV retrô">📺</span>
+                <span class="float-icon text-4xl md:text-5xl" title="Heróis clássicos">🦸</span>
+                <span class="float-icon text-4xl md:text-5xl" title="VHS nostalgia">📼</span>
+                <span class="float-icon text-4xl md:text-5xl" title="Estrelas">⭐</span>
+            </div>
+
+            <!-- Neon feature card -->
+            <div class="neon-card w-full max-w-2xl p-5 mb-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div>
+                    <p class="text-2xl md:text-3xl font-black text-white">+1.000</p>
+                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Episódios</p>
+                </div>
+                <div>
+                    <p class="text-2xl md:text-3xl font-black text-white">Full HD</p>
+                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Qualidade</p>
+                </div>
+                <div>
+                    <p class="text-2xl md:text-3xl font-black text-white">Todos</p>
+                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">os Dispositivos</p>
+                </div>
+                <div>
+                    <p class="text-2xl md:text-3xl font-black text-white">Vitalício</p>
+                    <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Acesso</p>
+                </div>
+            </div>
+
+            <!-- CTA BUTTON — Pulsing green, full width on mobile -->
+            <div class="w-full max-w-lg">
+                <a href="#pacotes" id="hero-cta" class="block w-full">
+                    <button
+                        class="cta-pulse w-full rounded-2xl py-5 px-6 font-bangers text-2xl md:text-3xl tracking-widest uppercase">
+                        🎯 QUERO MEU ACESSO POR APENAS R$ 9,90
+                    </button>
+                </a>
+                <!-- Security text -->
+                <p class="mt-3 text-gray-400 text-xs font-medium flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                        </path>
+                    </svg>
+                    Compra 100% segura com acesso imediato
+                </p>
+            </div>
+
+            <!-- Trust badges row -->
+            <div class="flex flex-wrap justify-center gap-3 mt-8">
+                <span class="trust-badge">✅ Pague uma vez, assista sempre</span>
+                <span class="trust-badge">🔒 Ambiente seguro SSL</span>
+                <span class="trust-badge">⚡ Acesso em segundos</span>
+                <span class="trust-badge">📱 Funciona no celular</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         TESTIMONIALS SECTION — DARK RETRO NEON
+    ═══════════════════════════════════ -->
+    <style>
+        /* ── Testimonials BG: dark navy + CRT scanlines ── */
+        .testimonials-dark {
+            background-color: #04041a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-dark::before {
+            /* glowing grid */
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        .testimonials-dark::after {
+            /* CRT scanlines overlay */
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 3px,
+                    rgba(0, 0, 0, 0.18) 3px,
+                    rgba(0, 0, 0, 0.18) 4px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Neon glowing section title */
+        .neon-title-red {
+            color: #ff2244;
+            font-family: 'Bangers', cursive;
+            letter-spacing: 3px;
+            text-shadow:
+                0 0 8px #ff2244,
+                0 0 20px rgba(255, 34, 68, 0.7),
+                0 0 50px rgba(255, 34, 68, 0.3),
+                2px 2px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        /* ── CARD 1: Retro CRT TV ── */
+        .card-crt {
+            background: #0a0a18;
+            border: 3px solid #00d4ff;
+            border-radius: 18px 18px 14px 14px;
+            box-shadow:
+                0 0 0 5px #111,
+                0 0 20px rgba(0, 212, 255, 0.25),
+                inset 0 0 40px rgba(0, 212, 255, 0.04);
+            position: relative;
+        }
+
+        .card-crt::before {
+            /* TV top antenna stub */
+            content: '📡';
+            position: absolute;
+            top: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+        }
+
+        /* CRT bottom "feet" */
+        .card-crt::after {
+            content: '▬  ▬';
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #00d4ff;
+            letter-spacing: 6px;
+        }
+
+        .card-crt .crt-screen {
+            background: linear-gradient(140deg, #020218 0%, #050528 100%);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            border-radius: 10px;
+            padding: 18px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-crt .crt-screen::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 3px);
+            pointer-events: none;
+        }
+
+        .avatar-crt {
+            background: radial-gradient(circle, #e30a17 60%, #a00000);
+            border: 3px solid #00d4ff;
+            box-shadow: 0 0 10px #00d4ff, 0 0 20px rgba(0, 212, 255, 0.4);
+            image-rendering: pixelated;
+        }
+
+        .stars-glow {
+            text-shadow: 0 0 8px #ffcc00, 0 0 16px rgba(255, 204, 0, 0.6);
+        }
+
+        /* ── CARD 2: VHS Tape Cover ── */
+        .card-vhs {
+            background: linear-gradient(135deg, #1a0a00 0%, #2a1000 50%, #1a0a00 100%);
+            border: 3px solid #ff8800;
+            border-radius: 6px 6px 10px 10px;
+            box-shadow:
+                0 0 20px rgba(255, 136, 0, 0.3),
+                inset 0 0 30px rgba(255, 100, 0, 0.05),
+                4px 4px 0 #000;
+            position: relative;
+        }
+
+        .card-vhs::before {
+            /* VHS tape window */
+            content: '▪ ⬭ ⬭ ▪';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #ff8800;
+            letter-spacing: 4px;
+            white-space: nowrap;
+        }
+
+        .vhs-label {
+            background: linear-gradient(90deg, #ff6600, #ffaa00, #ff6600);
+            border-radius: 4px;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: 900;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .avatar-vhs {
+            background: radial-gradient(circle, #1565c0 60%, #0d47a1);
+            border: 3px solid #ff8800;
+            box-shadow: 0 0 10px #ff8800, 0 0 20px rgba(255, 136, 0, 0.4);
+        }
+
+        /* ── CARD 3: 8-bit Game Cartridge ── */
+        .card-cartridge {
+            background: linear-gradient(160deg, #0a1f00 0%, #132800 60%, #0a1f00 100%);
+            border: 3px solid #00ff66;
+            border-radius: 10px 10px 4px 4px;
+            box-shadow:
+                0 0 20px rgba(0, 255, 102, 0.25),
+                inset 0 0 30px rgba(0, 255, 50, 0.04),
+                4px 4px 0 #000;
+            position: relative;
+        }
+
+        .card-cartridge::after {
+            /* cartridge bottom notch */
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 30%;
+            right: 30%;
+            height: 10px;
+            background: #00ff66;
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 4px 10px rgba(0, 255, 102, 0.4);
+        }
+
+        .pixel-label {
+            background: repeating-linear-gradient(90deg,
+                    #004d00 0px, #004d00 2px,
+                    #006600 2px, #006600 4px);
+            border: 2px solid #00ff66;
+            border-radius: 4px;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-weight: 900;
+            color: #00ff66;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-family: monospace;
+            box-shadow: 0 0 8px rgba(0, 255, 102, 0.5);
+        }
+
+        .avatar-cartridge {
+            background: radial-gradient(circle, #2e7d32 60%, #1b5e20);
+            border: 3px solid #00ff66;
+            box-shadow: 0 0 10px #00ff66, 0 0 20px rgba(0, 255, 102, 0.4);
+            image-rendering: pixelated;
+        }
+
+        /* 8-bit pixel border simulation */
+        .pixel-border {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Name text neon */
+        .name-crt {
+            color: #00d4ff;
+            text-shadow: 0 0 8px #00d4ff;
+            font-weight: 800;
+        }
+
+        .name-vhs {
+            color: #ffaa00;
+            text-shadow: 0 0 8px #ffaa00;
+            font-weight: 800;
+        }
+
+        .name-cart {
+            color: #00ff66;
+            text-shadow: 0 0 8px #00ff66;
+            font-weight: 800;
+            font-family: monospace;
+        }
+    </style>
+
+    <section class="testimonials-dark py-20">
+        <div class="relative z-10 max-w-5xl mx-auto px-4">
+
+            <!-- Section title — neon red glowing -->
+            <div class="text-center mb-14">
+                <p class="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-3">• AVALIAÇÕES REAIS •</p>
+                <h3 class="neon-title-red text-5xl md:text-6xl uppercase">
+                    QUEM COMPROU, AMOU!
+                </h3>
+                <div class="mt-4 flex justify-center gap-1">
+                    <span class="block w-16 h-1 rounded-full"
+                        style="background:#ff2244; box-shadow:0 0 8px #ff2244;"></span>
+                    <span class="block w-6 h-1 rounded-full" style="background:#ff224499;"></span>
+                    <span class="block w-3 h-1 rounded-full" style="background:#ff224444;"></span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 items-start">
+
+                <!-- ─── CARD 1: CRT TV ─── -->
+                <div class="card-crt p-2 mt-6">
+                    <div class="crt-screen p-5">
+                        <!-- channel indicator top -->
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-mono text-cyan-400 opacity-70 tracking-widest">CH ▶ 04</span>
+                            <span class="text-[10px] font-mono text-cyan-400 opacity-70 tracking-widest">● REC</span>
+                        </div>
+                        <!-- avatar + name -->
+                        <div class="flex items-center gap-3 mb-3">
+                            <div
+                                class="avatar-crt w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-lg shrink-0">
+                                RM</div>
+                            <div>
+                                <p class="name-crt text-base">Rafaela M.</p>
+                                <p class="stars-glow text-sm">⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                        <!-- review -->
+                        <p class="text-gray-200 text-sm leading-relaxed font-medium">
+                            "Nossa, voltei a ser criança! Meu filho adora assistir comigo. A qualidade é incrível!"
+                        </p>
+                        <!-- scan line footer -->
+                        <div class="mt-4 flex gap-1 opacity-30">
+                            <span class="block flex-1 h-px bg-cyan-400"></span>
+                            <span class="block flex-1 h-px bg-cyan-400 opacity-50"></span>
+                            <span class="block flex-1 h-px bg-cyan-400 opacity-25"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ─── CARD 2: VHS Tape ─── -->
+                <div class="card-vhs p-5 pb-6">
+                    <!-- VHS label strip -->
+                    <div class="flex justify-center mb-4">
+                        <span class="vhs-label">📼 VHS — Hora Animada</span>
+                    </div>
+                    <!-- avatar + name -->
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="avatar-vhs w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-lg shrink-0">
+                            CS</div>
+                        <div>
+                            <p class="name-vhs text-base">Carlos S.</p>
+                            <p class="stars-glow text-sm">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <p class="text-gray-200 text-sm leading-relaxed font-medium">
+                        "A qualidade é top, vale muito a pena. Já assisti uns 50 episódios com a família toda."
+                    </p>
+                    <!-- tape detail bar -->
+                    <div
+                        class="mt-5 border-t border-orange-900/50 pt-3 flex justify-between text-[10px] font-mono text-orange-400 opacity-60">
+                        <span>PLAY ▶</span><span>T-120</span><span>HI-FI</span>
+                    </div>
+                </div>
+
+                <!-- ─── CARD 3: Game Cartridge ─── -->
+                <div class="card-cartridge p-5 pb-8">
+                    <!-- pixel label -->
+                    <div class="flex justify-center mb-4">
+                        <span class="pixel-label">► GAME PAK™</span>
+                    </div>
+                    <!-- avatar + name -->
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="avatar-cartridge w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-lg shrink-0 font-mono pixel-border">
+                            MT</div>
+                        <div>
+                            <p class="name-cart text-base">Marcos T.</p>
+                            <p class="stars-glow text-sm">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <p class="text-gray-200 text-sm leading-relaxed font-medium font-mono">
+                        "O bônus secreto é sensacional rsrs. Comprei pelo pacote completo e não me arrependo!"
+                    </p>
+                    <!-- pixel HP bar -->
+                    <div class="mt-5 border-t border-green-900/50 pt-3">
+                        <div class="flex justify-between text-[10px] font-mono text-green-400 opacity-70 mb-1">
+                            <span>SATISFAÇÃO</span><span>100/100</span>
+                        </div>
+                        <div class="w-full h-2 bg-black rounded border border-green-800">
+                            <div class="h-full rounded"
+                                style="width:100%;background:linear-gradient(90deg,#00ff66,#00cc44);box-shadow:0 0 6px #00ff66;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         BONUSES SECTION — DARK RETRO NEON
+    ═══════════════════════════════════ -->
+    <style>
+        /* ── Bonuses section background ── */
+        .bonuses-section {
+            background: linear-gradient(180deg, #04041a 0%, #060616 60%, #080820 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bonuses-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(ellipse 70% 50% at 50% 0%, rgba(120, 40, 255, 0.08) 0%, transparent 70%),
+                radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: auto, 24px 24px;
+            pointer-events: none;
+        }
+
+        /* ── Section title ── */
+        .bonus-title {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 2px;
+            color: #FFE600;
+            text-shadow:
+                0 0 10px rgba(255, 230, 0, 0.8),
+                0 0 30px rgba(255, 180, 0, 0.4),
+                2px 2px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        /* ── Glass bonus card base ── */
+        .bonus-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(6px);
+            border: 1.5px solid rgba(100, 100, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            cursor: default;
+        }
+
+        .bonus-card::before {
+            /* subtle inner top glow */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(160, 100, 255, 0.5), transparent);
+        }
+
+        .bonus-card:hover {
+            border-color: rgba(130, 80, 255, 0.7);
+            box-shadow: 0 0 24px rgba(120, 60, 255, 0.25), 0 0 60px rgba(100, 40, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Color-coded hover variants */
+        .bonus-card.blue:hover {
+            border-color: rgba(0, 212, 255, 0.7);
+            box-shadow: 0 0 24px rgba(0, 212, 255, 0.25), 0 0 60px rgba(0, 180, 255, 0.1);
+        }
+
+        .bonus-card.purple:hover {
+            border-color: rgba(180, 60, 255, 0.7);
+            box-shadow: 0 0 24px rgba(180, 60, 255, 0.3), 0 0 60px rgba(140, 40, 255, 0.15);
+        }
+
+        .bonus-card.orange:hover {
+            border-color: rgba(255, 150, 0, 0.7);
+            box-shadow: 0 0 24px rgba(255, 150, 0, 0.25), 0 0 60px rgba(255, 100, 0, 0.1);
+        }
+
+        .bonus-card.green:hover {
+            border-color: rgba(0, 255, 102, 0.7);
+            box-shadow: 0 0 24px rgba(0, 255, 102, 0.25), 0 0 60px rgba(0, 220, 80, 0.1);
+        }
+
+        /* ── Icon wrapper ── */
+        .bonus-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 26px;
+            margin-bottom: 16px;
+        }
+
+        .icon-blue {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1.5px solid rgba(0, 212, 255, 0.3);
+            box-shadow: inset 0 0 12px rgba(0, 212, 255, 0.08);
+        }
+
+        .icon-purple {
+            background: rgba(180, 60, 255, 0.1);
+            border: 1.5px solid rgba(180, 60, 255, 0.3);
+            box-shadow: inset 0 0 12px rgba(180, 60, 255, 0.08);
+        }
+
+        .icon-orange {
+            background: rgba(255, 150, 0, 0.1);
+            border: 1.5px solid rgba(255, 150, 0, 0.3);
+            box-shadow: inset 0 0 12px rgba(255, 150, 0, 0.08);
+        }
+
+        .icon-green {
+            background: rgba(0, 255, 102, 0.1);
+            border: 1.5px solid rgba(0, 255, 102, 0.3);
+            box-shadow: inset 0 0 12px rgba(0, 255, 102, 0.08);
+        }
+
+        .icon-red {
+            background: rgba(255, 40, 60, 0.1);
+            border: 1.5px solid rgba(255, 40, 60, 0.3);
+            box-shadow: inset 0 0 12px rgba(255, 40, 60, 0.08);
+        }
+
+        .icon-cyan {
+            background: rgba(0, 255, 220, 0.1);
+            border: 1.5px solid rgba(0, 255, 220, 0.3);
+            box-shadow: inset 0 0 12px rgba(0, 255, 220, 0.08);
+        }
+
+        /* ── Pricing ── */
+        .old-price {
+            color: #ff4455;
+            text-decoration: line-through;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .gratis-tag {
+            font-family: 'Bangers', cursive;
+            font-size: 24px;
+            letter-spacing: 2px;
+            color: #00ff66;
+            text-shadow: 0 0 8px #00ff66, 0 0 20px rgba(0, 255, 102, 0.5);
+        }
+
+        /* ── Special card: +18 Hazard stripe ── */
+        .card-restricted {
+            border-color: rgba(255, 40, 60, 0.4) !important;
+        }
+
+        .card-restricted::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: repeating-linear-gradient(-45deg,
+                    #ff2233,
+                    #ff2233 6px,
+                    #1a0005 6px,
+                    #1a0005 12px);
+            border-radius: 14px 14px 0 0;
+        }
+
+        .card-restricted:hover {
+            border-color: rgba(255, 40, 60, 0.85) !important;
+            box-shadow: 0 0 28px rgba(255, 40, 60, 0.3), 0 0 60px rgba(200, 20, 40, 0.15) !important;
+        }
+
+        /* ── Savings bar ── */
+        .savings-bar {
+            background: linear-gradient(90deg, rgba(0, 255, 102, 0.08), rgba(0, 255, 102, 0.15), rgba(0, 255, 102, 0.08));
+            border: 1px solid rgba(0, 255, 102, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 102, 0.08);
+        }
+    </style>
+
+    <section class="bonuses-section text-white py-20">
+        <div class="relative z-10 max-w-6xl mx-auto px-4">
+
+            <!-- Section Title -->
+            <div class="text-center mb-4">
+                <p class="text-xs font-bold uppercase tracking-[0.3em] text-purple-400/70 mb-4">🎁 BÔNUS EXCLUSIVOS</p>
+                <h3 class="bonus-title text-3xl md:text-5xl leading-tight max-w-3xl mx-auto">
+                    COMPRANDO HOJE, VOCÊ GANHA 6 PRESENTES EXCLUSIVOS:
+                </h3>
+            </div>
+
+            <!-- Grid 1→2→3 cols -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
+
+                <!-- ─── BÔNUS 1: Área de Membros Premium ─── -->
+                <div class="bonus-card blue flex flex-col">
+                    <div class="bonus-icon icon-blue">📺</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">ÁREA DE MEMBROS
+                        PREMIUM</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">Plataforma exclusiva e organizada tipo
+                        Netflix para você assistir tudo com conforto imediato.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 97,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+                <!-- ─── BÔNUS 2: Revistas em Quadrinhos ─── -->
+                <div class="bonus-card purple flex flex-col">
+                    <div class="bonus-icon icon-purple">📚</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">1.200 REVISTAS EM
+                        QUADRINHOS</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">Coleção completa das melhores HQs da
+                        Marvel, DC e Disney em formato digital de alta qualidade.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 67,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+                <!-- ─── BÔNUS 3: Desenhos para Colorir ─── -->
+                <div class="bonus-card orange flex flex-col">
+                    <div class="bonus-icon icon-orange">✏️</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">500 DESENHOS PARA
+                        COLORIR</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">Arquivos em alta resolução prontos para
+                        imprimir e garantir a diversão da criançada.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 55,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+                <!-- ─── BÔNUS 4: Trilhas Sonoras ─── -->
+                <div class="bonus-card cyan flex flex-col" style="--hover-col:rgba(0,255,220,0.7);">
+                    <div class="bonus-icon icon-cyan">📼</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">TRILHAS SONORAS
+                        ORIGINAIS</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">As músicas e aberturas inesquecíveis
+                        que marcaram a sua infância. Cassete retrô digital.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 27,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+                <!-- ─── BÔNUS 5: Acesso Secreto +18 ─── (Special hazard card) -->
+                <div class="bonus-card card-restricted flex flex-col" style="padding-top:28px;">
+                    <!-- Restricted badge -->
+                    <div
+                        class="inline-flex items-center gap-1 bg-red-950/60 border border-red-600/50 text-red-400 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 self-start">
+                        ⚠ CONTEÚDO RESTRITO
+                    </div>
+                    <div class="bonus-icon icon-red">🔒</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">ACESSO SECRETO (+18)
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">Conteúdo adulto exclusivo. Totalmente
+                        opcional e protegido por senha. Só para maiores.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 97,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+                <!-- ─── BÔNUS 6: Grupo VIP ─── -->
+                <div class="bonus-card green flex flex-col">
+                    <div class="bonus-icon icon-green">🕹️</div>
+                    <h4 class="font-bangers text-white text-xl tracking-wider mb-2 leading-tight">GRUPO VIP DE PEDIDOS
+                    </h4>
+                    <p class="text-gray-400 text-sm leading-relaxed flex-1 mb-4">Acesso à comunidade onde você pode
+                        pedir os desenhos que faltam na sua coleção.</p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <span class="old-price">R$ 47,00</span>
+                        <span class="gratis-tag">GRÁTIS</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Total savings bar -->
+            <div
+                class="savings-bar mt-16 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <div>
+                    <p class="text-gray-400 text-sm uppercase tracking-widest mb-1">Valor total dos bônus</p>
+                    <p class="font-bangers text-4xl" style="color:#ff4455; text-shadow:0 0 10px rgba(255,68,85,0.4);">
+                        R$ 390,00 de bônus
+                    </p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mb-1">Você paga somente</p>
+                    <p class="font-bangers text-5xl" style="color:#00ff66; text-shadow:0 0 12px rgba(0,255,102,0.6);">
+                        R$ 9,90
+                    </p>
+                </div>
+                <a href="#pacotes" class="block shrink-0">
+                    <button
+                        class="cta-pulse rounded-xl py-3 px-8 font-bangers text-xl tracking-wider uppercase whitespace-nowrap">
+                        🎯 QUERO AGORA
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ═══════════════════════════════════
+         PRICING SECTION — DARK ARCADE NEON
+    ═══════════════════════════════════ -->
+    <style>
+        /* ── Pricing section bg ── */
+        .pricing-section {
+            background-color: #0B0F19;
+            background-image:
+                linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+            background-size: 36px 36px;
+            position: relative;
+        }
+
+        /* ── Pricing section title ── */
+        .pricing-title {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 3px;
+            color: #FFE600;
+            text-shadow:
+                0 0 10px rgba(255, 230, 0, 0.7),
+                0 0 30px rgba(255, 200, 0, 0.3),
+                3px 3px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        /* ── Card 1: Basic — Decoy ── */
+        .card-basic {
+            background: #111827;
+            border: 2px solid #374151;
+            border-radius: 16px;
+            padding: 32px;
+            position: relative;
+        }
+
+        /* ── Card 2: Premium — Hero ── */
+        .card-premium {
+            background: #FFCC00;
+            border: 4px solid #000;
+            border-radius: 16px;
+            padding: 32px;
+            position: relative;
+            box-shadow: 10px 10px 0 #000;
+            z-index: 10;
+        }
+
+        /* ── Premium price (R$ 25,90) with paint-stroke outline ── */
+        .price-premium {
+            font-family: 'Bangers', cursive;
+            font-size: 72px;
+            line-height: 1;
+            color: #00CC22;
+            -webkit-text-stroke: 3px #000;
+            paint-order: stroke fill;
+            letter-spacing: 2px;
+        }
+
+        /* ── Badge "O Mais Vendido" ── */
+        .badge-top {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e30a17;
+            color: #fff;
+            font-weight: 900;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 18px;
+            border-radius: 999px;
+            border: 2px solid #000;
+            white-space: nowrap;
+            box-shadow: 2px 2px 0 #000;
+        }
+
+        /* ── Bonus inner box ── */
+        .bonus-inner-box {
+            background: #FFFFCC;
+            border: 2.5px dashed #e30a17;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        /* ── CTA green pulse button ── */
+        .btn-premium-cta {
+            background: #00DD00;
+            border: 4px solid #000;
+            box-shadow: 0 6px 0 #004400, 0 0 0 0 rgba(0, 220, 0, 0.5);
+            border-radius: 14px;
+            padding: 16px 24px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            animation: premiumPulse 1.6s ease-in-out infinite;
+            transition: transform 0.1s ease;
+        }
+
+        .btn-premium-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 #004400, 0 0 30px rgba(0, 220, 0, 0.5);
+        }
+
+        .btn-premium-cta:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #004400;
+        }
+
+        @keyframes premiumPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 0 #004400, 0 0 0 0 rgba(0, 220, 0, 0.6);
+            }
+
+            50% {
+                box-shadow: 0 6px 0 #004400, 0 0 0 12px rgba(0, 220, 0, 0);
+            }
+        }
+
+        /* ── Ghost button (Card 1) ── */
+        .btn-ghost {
+            background: transparent;
+            border: 2px solid #4B5563;
+            border-radius: 10px;
+            padding: 12px 20px;
+            width: 100%;
+            color: #9CA3AF;
+            font-family: 'Bangers', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: #D1D5DB;
+        }
+
+        /* ── Checkmark icons ── */
+        .icon-check {
+            color: #16a34a;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .icon-x {
+            color: #ef4444;
+            flex-shrink: 0;
+            margin-top: 2px;
+            opacity: 0.55;
+        }
+    </style>
+
+    <!-- ══════════════════════════════════
+         PRICING SECTION — POP-ART CYAN
+    ══════════════════════════════════ -->
+    <style>
+        /* Override pricing section to cyan halftone */
+        #pacotes {
+            background-color: #33CCFF !important;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.13) 15%, transparent 15%) !important;
+            background-size: 12px 12px !important;
+        }
+
+        /* Section title: yellow, black comic drop-shadow */
+        #pacotes .pricing-title {
+            font-family: 'Bangers', cursive !important;
+            color: #FFCC00 !important;
+            letter-spacing: 3px !important;
+            text-shadow:
+                3px 3px 0 #000,
+                -1px -1px 0 #000,
+                0 0 20px rgba(255, 204, 0, 0.8),
+                0 0 50px rgba(255, 180, 0, 0.4) !important;
+        }
+
+        /* Basic card — white, thin black border, subtle shadow */
+        #pacotes .pc-basic {
+            background: #ffffff;
+            border: 2px solid #000;
+            box-shadow: 5px 5px 0 #000;
+            border-radius: 16px;
+            padding: 28px;
+            position: relative;
+        }
+
+        #pacotes .pc-basic h4 {
+            color: #000;
+            font-weight: 900;
+        }
+
+        #pacotes .pc-basic .pc-price {
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        #pacotes .pc-basic .pc-item-ok {
+            color: #1a1a1a;
+        }
+
+        #pacotes .pc-basic .pc-item-no {
+            color: #c0313a;
+            opacity: 0.60;
+        }
+
+        #pacotes .pc-basic .pc-check {
+            color: #00BB00;
+        }
+
+        #pacotes .pc-basic .pc-x {
+            color: #cc2233;
+        }
+
+        #pacotes .pc-basic .btn-basic {
+            background: #e5e7eb;
+            border: 2px solid #555;
+            color: #222;
+            border-radius: 10px;
+            padding: 12px 20px;
+            width: 100%;
+            font-family: 'Bangers', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        #pacotes .pc-basic .btn-basic:hover {
+            background: #d1d5db;
+        }
+
+        /* Premium card — yellow, massive black pop-art shadow */
+        #pacotes .pc-premium {
+            background: #FFCC00;
+            border: 4px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            border-radius: 16px;
+            padding: 28px;
+            position: relative;
+        }
+
+        /* Badge */
+        #pacotes .pc-badge {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e30a17;
+            color: #fff;
+            font-weight: 900;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 18px;
+            border-radius: 999px;
+            border: 2px solid #000;
+            white-space: nowrap;
+            box-shadow: 2px 2px 0 #000;
+        }
+
+        /* Premium price: massive neon green with black -webkit-text-stroke */
+        #pacotes .pc-price-main {
+            font-family: 'Bangers', cursive;
+            font-size: 80px;
+            line-height: 1;
+            color: #00FF00;
+            -webkit-text-stroke: 3px #000;
+            paint-order: stroke fill;
+            letter-spacing: 2px;
+            display: block;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            #pacotes .pc-price-main {
+                font-size: 60px !important;
+            }
+
+            #pacotes .pc-premium,
+            #pacotes .pc-basic {
+                max-width: 100% !important;
+            }
+        }
+
+        /* Premium CTA — already covered by global .btn-premium-cta / .cta-pulse
+           but explicitly reinforce here */
+        #pacotes .btn-cta-premium {
+            background: #00FF00 !important;
+            color: #000 !important;
+            border: 4px solid #000 !important;
+            box-shadow: 0 8px 0 #003300, 0 0 0 0 rgba(0, 255, 0, 0.5) !important;
+            border-radius: 14px !important;
+            padding: 16px 24px !important;
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            cursor: pointer !important;
+            animation: ctaPulse 1.6s ease-in-out infinite !important;
+            transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+        }
+
+        #pacotes .btn-cta-premium:hover {
+            transform: translateY(-3px) !important;
+            box-shadow: 0 12px 0 #003300, 0 0 30px rgba(0, 255, 0, 0.5) !important;
+        }
+
+        #pacotes .btn-cta-premium:active {
+            transform: translateY(5px) !important;
+            box-shadow: 0 3px 0 #003300 !important;
+        }
+
+        /* Bonus inner box */
+        #pacotes .pc-bonus-box {
+            background: #ffffcc;
+            border: 2.5px dashed #e30a17;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <section id="pacotes" class="py-20 md:py-28">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <p class="text-xs font-bold uppercase tracking-[0.3em] mb-3" style="color:rgba(0,0,80,0.6);">&#8226;
+                    ESCOLHA SEU ACESSO &#8226;</p>
+                <h3 class="pricing-title text-4xl md:text-6xl uppercase">ESCOLHA SEU PACOTE</h3>
+            </div>
+
+            <!-- Two-card row -->
+            <div class="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-8">
+
+                <!-- ══ CARD 1: BÁSICO (Decoy) ══ -->
+                <div class="pc-basic w-full md:max-w-[390px] md:mt-10 flex-shrink-0">
+                    <h4 class="font-bangers text-3xl text-center uppercase tracking-wider mb-1">PACOTE B&#193;SICO</h4>
+                    <p class="pc-price text-center mb-6">R$ 10,00</p>
+
+                    <ul class="space-y-3 text-sm mb-8">
+                        <!-- ✅ Included -->
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-check w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="pc-item-ok">1.000 Desenhos Cl&#225;ssicos (Pacote Inicial)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-check w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="pc-item-ok">Qualidade Padr&#227;o</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-check w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="pc-item-ok">Acesso por 6 meses</span>
+                        </li>
+                        <!-- divider -->
+                        <li class="border-t border-gray-200 my-1"></li>
+                        <!-- ❌ Excluded -->
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">5.000 Horas de Filmes e Cine Seriados Raros</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">He-Man e os Mestres do Universo (Completo)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">Caverna do Drag&#227;o (Todos os Epis&#243;dios)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">Thundercats e Silverhawks</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">Pica-Pau e Looney Tunes</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">Cavaleiros do Zod&#237;aco e Dragon Ball</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">X-Men The Animated Series e Spider-Man</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no">Tom &amp; Jerry e Scooby-Doo</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="pc-x w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="pc-item-no font-semibold">TODOS OS B&#212;NUS EXCLUSIVOS</span>
+                        </li>
+                    </ul>
+
+                    <button class="btn-basic">ESCOLHER B&#193;SICO</button>
+                </div>
+
+                <!-- ══ CARD 2: PREMIUM (Main Offer) ══ -->
+                <div class="pc-premium w-full md:max-w-[460px] flex-shrink-0">
+                    <!-- Top badge -->
+                    <div class="pc-badge">&#11088; O MAIS VENDIDO &#11088;</div>
+
+                    <!-- Title -->
+                    <h4 class="font-bangers text-center text-3xl md:text-4xl mt-5 mb-1 uppercase italic"
+                        style="color:#e30a17; text-shadow:2px 2px 0 rgba(0,0,0,0.2);">
+                        PACOTE REL&#205;QUIA: ACERVO COLECIONADOR
+                    </h4>
+
+                    <!-- Strikethrough + Price -->
+                    <p class="text-center text-black text-sm font-medium line-through mt-3 mb-0">De R$ 97,00 por apenas
+                    </p>
+                    <span class="pc-price-main mb-4">R$ 19,90</span>
+
+                    <!-- Features list -->
+                    <ul
+                        class="space-y-2 text-sm font-bold text-black mb-5 border-b-2 border-dashed border-red-400 pb-4">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            20.000 Horas de Desenhos Cl&#225;ssicos
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            5.000 Horas de Filmes e Cine Seriados Raros
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            He-Man e os Mestres do Universo (Completo)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Caverna do Drag&#227;o (Todos os Epis&#243;dios)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Thundercats e Silverhawks
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Pica-Pau e Looney Tunes (Acervo de Ouro)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Cavaleiros do Zod&#237;aco e Dragon Ball Cl&#225;ssico
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            X-Men The Animated Series e Spider-Man
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Tom &amp; Jerry e Scooby-Doo Cl&#225;ssicos
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Acesso Vital&#237;cio &#8211; Pague uma vez, assista sempre
+                        </li>
+                    </ul>
+
+                    <!-- Inner Bonus Box -->
+                    <div class="pc-bonus-box">
+                        <h5 class="font-bangers text-xl text-center uppercase tracking-wider mb-3"
+                            style="color:#e30a17;">&#127873; B&#212;NUS EXCLUSIVOS</h5>
+                        <ul class="space-y-1 text-xs font-bold text-gray-800">
+                            <li class="flex items-center gap-2"><span>&#127873;</span> &#193;REA DE MEMBROS PREMIUM</li>
+                            <li class="flex items-center gap-2"><span>&#127873;</span> 1.200 Revistas em Quadrinhos</li>
+                            <li class="flex items-center gap-2"><span>&#127873;</span> 500 Desenhos Cl&#225;ssicos para
+                                Colorir</li>
+                            <li class="flex items-center gap-2"><span>&#127873;</span> Trilhas Sonoras Originais</li>
+                            <li class="flex items-center gap-2"><span>&#127873;</span> Acesso Secreto +18</li>
+                            <li class="flex items-center gap-2"><span>&#127873;</span> Grupo VIP para Pedir Novos
+                                Desenhos</li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="btn-cta-premium" id="cta-premium">
+                        <span
+                            style="color:#fff; font-family:'Bangers',cursive; font-size:1.6rem; letter-spacing:2px; text-transform:uppercase; line-height:1.2;">
+                            QUERO O ACERVO COMPLETO
+                        </span>
+                        <span style="color:#000; font-size:0.85rem; font-weight:700; margin-top:4px;">
+                            Garantir acesso vital&#237;cio!
+                        </span>
+                    </button>
+
+                </div>
+            </div><!-- /row -->
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         FAQ SECTION — DARK RETRO NEON ACCORDION
+    ═══════════════════════════════════ -->
+    <style>
+        /* ── FAQ section background ── */
+        .faq-section {
+            background: linear-gradient(180deg, #0B0F19 0%, #080B14 100%);
+            position: relative;
+        }
+
+        .faq-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(0, 255, 102, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* ── FAQ Title ── */
+        .faq-title {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 4px;
+            color: #FFE600;
+            text-shadow:
+                0 0 10px rgba(255, 230, 0, 0.8),
+                0 0 30px rgba(255, 200, 0, 0.3),
+                3px 3px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        /* ── Accordion item ── */
+        .faq-item {
+            border: 1.5px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.025);
+            overflow: hidden;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover,
+        .faq-item.open {
+            border-color: rgba(0, 255, 102, 0.45);
+            box-shadow: 0 0 16px rgba(0, 255, 102, 0.1);
+        }
+
+        /* ── Question button ── */
+        .faq-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            text-align: left;
+            gap: 16px;
+        }
+
+        .faq-btn .faq-q {
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 255, 102, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 900;
+            color: #00ff66;
+            text-shadow: 0 0 8px rgba(0, 255, 102, 0.7);
+            transition: transform 0.35s ease, background 0.2s ease;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .faq-item.open .faq-icon {
+            background: rgba(0, 255, 102, 0.12);
+            transform: rotate(45deg);
+        }
+
+        /* ── Answer panel (animated height) ── */
+        .faq-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .faq-item.open .faq-panel {
+            max-height: 400px;
+            opacity: 1;
+        }
+
+        .faq-panel-inner {
+            padding: 0 24px 20px 24px;
+            color: #9CA3AF;
+            font-size: 14px;
+            line-height: 1.75;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 16px;
+        }
+    </style>
+
+    <section class="faq-section py-20">
+        <div class="relative z-10 max-w-3xl mx-auto px-4">
+
+            <!-- Title -->
+            <div class="text-center mb-14">
+                <p class="text-xs font-bold uppercase tracking-[0.3em] text-green-500/60 mb-3">• TIRE SUAS D&#218;VIDAS
+                    •</p>
+                <h3 class="faq-title text-4xl md:text-6xl uppercase">PERGUNTAS FREQUENTES</h3>
+                <div class="mt-4 flex justify-center gap-1">
+                    <span class="block w-16 h-1 rounded-full"
+                        style="background:#00ff66; box-shadow:0 0 8px #00ff66;"></span>
+                    <span class="block w-6 h-1 rounded-full" style="background:#00ff6699;"></span>
+                    <span class="block w-3 h-1 rounded-full" style="background:#00ff6644;"></span>
+                </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="flex flex-col gap-3" id="faq-accordion">
+
+                <!-- Q1 -->
+                <div class="faq-item" id="faq-1">
+                    <button class="faq-btn" onclick="toggleFaq('faq-1')" aria-expanded="false">
+                        <span class="faq-q">Como vou receber o meu acesso?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            Assim que o seu pagamento for aprovado (Pix ou Cart&#227;o de Cr&#233;dito liberam na hora),
+                            voc&#234; receber&#225; um e-mail com o seu login e senha, al&#233;m do link direto para
+                            acessar nossa plataforma exclusiva, que funciona igual &#224; Netflix.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item" id="faq-2">
+                    <button class="faq-btn" onclick="toggleFaq('faq-2')" aria-expanded="false">
+                        <span class="faq-q">Funciona na minha Smart TV ou Celular?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            Sim! Voc&#234; pode assistir em qualquer dispositivo: Celular, Tablet, Computador, Notebook
+                            e Smart TV. Basta acessar o link da plataforma pelo navegador do seu aparelho.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item" id="faq-3">
+                    <button class="faq-btn" onclick="toggleFaq('faq-3')" aria-expanded="false">
+                        <span class="faq-q">&#201; um pagamento &#250;nico ou tem mensalidade?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            Pagamento 100% &#218;NICO. Voc&#234; paga apenas o valor da oferta de hoje e tem acesso
+                            vital&#237;cio (para sempre) ao pacote escolhido. N&#227;o existe nenhuma taxa oculta ou
+                            cobran&#231;a mensal.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item" id="faq-4">
+                    <button class="faq-btn" onclick="toggleFaq('faq-4')" aria-expanded="false">
+                        <span class="faq-q">E se eu comprar e n&#227;o gostar?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            Voc&#234; est&#225; protegido pela nossa Garantia Incondicional de 7 Dias. Se voc&#234;
+                            acessar o ba&#250; da nostalgia e achar que n&#227;o valeu a pena, basta nos mandar um
+                            &#250;nico e-mail ou mensagem no suporte e devolvemos 100% do seu dinheiro. Risco zero.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item" id="faq-5">
+                    <button class="faq-btn" onclick="toggleFaq('faq-5')" aria-expanded="false">
+                        <span class="faq-q">Os desenhos s&#227;o completos e dublados?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            Sim! O acervo conta com epis&#243;dios completos e com a cl&#225;ssica dublagem original em
+                            portugu&#234;s (PT-BR) que passou na TV aberta nos anos 80, 90 e 2000. A qualidade de
+                            &#225;udio e v&#237;deo foi otimizada para a melhor experi&#234;ncia nost&#225;lgica
+                            poss&#237;vel.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="faq-item" id="faq-6">
+                    <button class="faq-btn" onclick="toggleFaq('faq-6')" aria-expanded="false">
+                        <span class="faq-q">Sobre o b&#244;nus secreto +18: meus filhos podem ver sem querer?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-panel" role="region">
+                        <div class="faq-panel-inner">
+                            De jeito nenhum. O acesso ao b&#244;nus adulto &#233; totalmente opcional e fica trancado em
+                            uma &#225;rea separada com senha pr&#243;pria. A plataforma principal &#233; 100% segura e
+                            livre para toda a fam&#237;lia assistir aos desenhos.
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /accordion -->
+
+        </div>
+    </section>
+
+    <script>
+        function toggleFaq(id) {
+            var items = document.querySelectorAll('.faq-item');
+            var target = document.getElementById(id);
+            var isOpen = target.classList.contains('open');
+
+            // Close all
+            items.forEach(function (item) {
+                item.classList.remove('open');
+                var btn = item.querySelector('.faq-btn');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+
+            // Open target if it was closed
+            if (!isOpen) {
+                target.classList.add('open');
+                var btn = target.querySelector('.faq-btn');
+                if (btn) btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+
+    <footer class="bg-black text-gray-400 py-8 text-center text-sm border-t-4 border-red-600">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="mb-2">Hora Animada © 2026 - Todos os direitos reservados.</p>
+            <p class="text-xs max-w-2xl mx-auto opacity-70">
+                Este site não é afiliado ao Google, Facebook ou Vercel. Todo conteúdo disponibilizado aqui é fruto de
+                curadoria.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
